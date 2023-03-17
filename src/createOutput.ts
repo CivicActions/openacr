@@ -98,9 +98,9 @@ export function createOutput(
     if (data.license) {
       if (templateType === "html") {
         return new Handlebars.SafeString(
-          `<a href="${spdxLicenseList[data.license].url}">${
+          `<a href="${spdxLicenseList[data.license].url}" target="_blank">${
             spdxLicenseList[data.license].name
-          }</a>`
+          } <span class="usa-sr-only">(opens in a new window or tab)</span></a>`
         );
       } else {
         return `[${spdxLicenseList[data.license].name}](${
@@ -110,13 +110,30 @@ export function createOutput(
     } else {
       if (templateType === "html") {
         return new Handlebars.SafeString(
-          `<a href="${spdxLicenseList["CC-BY-4.0"].url}">${spdxLicenseList["CC-BY-4.0"].name}</a>`
+          `<a href="${spdxLicenseList["CC-BY-4.0"].url}" target="_blank">${spdxLicenseList["CC-BY-4.0"].name} <span class="usa-sr-only">(opens in a new window or tab)</span></a>`
         );
       } else {
         return `[${spdxLicenseList["CC-BY-4.0"].name}](${spdxLicenseList["CC-BY-4.0"].url})`;
       }
     }
   });
+
+  Handlebars.registerHelper("concat", function (a, b) {
+    if (b) {
+      return a + b;
+    }
+    return a;
+  });
+
+  Handlebars.registerHelper(
+    "headerWithAnchor",
+    function (headerText, idText, headerLevel = 2) {
+      return new Handlebars.SafeString(`<h${headerLevel} id="${idText}">
+        <a href="#${idText}" aria-hidden="true" class="header-anchor">#</a>
+        ${headerText}
+      </h${headerLevel}>`);
+    }
+  );
 
   Handlebars.registerHelper("reportFilename", function (reportVersion = true) {
     let reportFilename = "report";

@@ -118,5 +118,21 @@ export function createOutput(
     }
   });
 
+  Handlebars.registerHelper("reportFilename", function (reportVersion = true) {
+    let reportFilename = "report";
+    if (data.product.name) {
+      reportFilename = data.product.name.toLowerCase();
+    }
+    if (data.product.version) {
+      reportFilename += "-" + data.product.version;
+    }
+
+    if (reportVersion && data.version) {
+      reportFilename += "-" + data.version;
+    }
+
+    return reportFilename;
+  });
+
   return template(data);
 }

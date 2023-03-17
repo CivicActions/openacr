@@ -14,24 +14,29 @@
   <script type="text/javascript" charset="utf8" src="uswds/js/uswds.min.js"></script>
   <main>
     <div class="grid-container">
-      <h1>{{title}}</h1>
+      <h1><span class="evaluation-title">{{title}}</span> Accessibility Conformance Report</h1>
 
-      Based on {{catalog.title}}
-      <h2 id="name-of-product-version">
-        <a href="#name-of-product-version" aria-hidden="true" class="header-anchor">#</a>
-        Name of Product/Version
-      </h2>
-      {{product.name}}{{#if product.version}} {{product.version}}{{/if}}
+      <div class="catalog-section">Based on {{catalog.title}}</div>
 
+      <div class="product-section">
+        <h2 id="name-of-product-version">
+          <a href="#name-of-product-version" aria-hidden="true" class="header-anchor">#</a>
+          Name of Product/Version
+        </h2>
+        {{product.name}}{{#if product.version}} {{product.version}}{{/if}}
+      </div>
+
+      <div class="report-dates-ver-section">
       <h2 id="report-date">
         <a href="#report-date" aria-hidden="true" class="header-anchor">#</a>
-        Report Date
+        Report Dates and Version
       </h2>
-      {{#if report_date}}
-        {{report_date}}
-      {{else}}
-        {{ now }}
-      {{/if}}
+      <ul>
+        <li>Report Date: {{report_date}}</li>
+        <li>Last Modified Date: {{last_modified_date}}</li>
+        <li>Version: {{reportFilename}}</li>
+      </ul>
+      </div>
 
       {{#if product.description}}
         <h2 id="product-description">

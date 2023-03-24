@@ -151,5 +151,53 @@ export function createOutput(
     return reportFilename;
   });
 
+  Handlebars.registerHelper("levelCount", function (components) {
+    let levelCount = 0;
+    if (components) {
+      for (const component of components) {
+        if (component.adherence.level) {
+          levelCount = levelCount + 1;
+        }
+      }
+    }
+    return levelCount;
+  });
+
+  Handlebars.registerHelper("progressPerChapter", function (criterias) {
+    let supportCount = 0;
+    let partiallySupportCount = 0;
+    let doesNotSupportCount = 0;
+    let notApplicableCount = 0;
+    if (criterias) {
+      for (const criteria of criterias) {
+        for (const component of criteria.components) {
+          if (component.adherence.level === "supports") {
+            supportCount = supportCount + 1;
+          } else if (component.adherence.level === "partially-supports") {
+            partiallySupportCount = partiallySupportCount + 1;
+          } else if (component.adherence.level === "does-not-support") {
+            doesNotSupportCount = doesNotSupportCount + 1;
+          } else if (component.adherence.level === "not-applicable") {
+            notApplicableCount = notApplicableCount + 1;
+          }
+        }
+      }
+    }
+
+    if (templateType === "html") {
+      return new Handlebars.SafeString(
+        `<li>${supportCount} supported</li>
+        <li>${partiallySupportCount} partially supported</li>
+        <li>${doesNotSupportCount} not supported</li>
+        <li>${notApplicableCount} not applicable</li>`
+      );
+    } else {
+      return `* ${supportCount} supported
+      * ${partiallySupportCount} partially supported
+      * ${doesNotSupportCount} not supported
+      * ${notApplicableCount} not applicable`;
+    }
+  });
+
   return template(data);
 }

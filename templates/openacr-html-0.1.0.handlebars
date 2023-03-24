@@ -129,6 +129,15 @@
               {{/if}}
 
               {{#if data-category.criteria}}
+                <div id="{{catalog-chapter.id}}-summary">
+                  <p>
+                    Conformance to the {{data-category.criteria.length}} criteria listed below is distributed as follows:
+                  </p>
+                  <ul>
+                    {{progressPerChapter data-category.criteria}}
+                  </ul>
+                </div>
+
                 <table class="usa-table">
                   <thead>
                   <tr>
@@ -147,10 +156,10 @@
                         </td>
                         <td>
                           {{#if data-criteria.components}}
-                            <ul>
+                            <ul class="component-level-count-{{levelCount data-criteria.components}}">
                               {{#each data-criteria.components as |data-components|}}
                                 {{#if data-components.adherence.level}}
-                                  <li>{{catalogComponentLabel data-components.name}}{{levelLabel data-components.adherence.level}}</li>
+                                  <li><span class="component-level-label">{{catalogComponentLabel data-components.name}}</span>{{levelLabel data-components.adherence.level}}</li>
                                 {{/if}}
                               {{/each}}
                             </ul>
@@ -158,10 +167,10 @@
                         </td>
                         <td>
                           {{#if data-criteria.components}}
-                            <ul>
+                            <ul class="component-level-count-{{levelCount data-criteria.components}}">
                               {{#each data-criteria.components as |data-components|}}
                                 {{#if data-components.adherence.notes}}
-                                <li>{{catalogComponentLabel data-components.name}}{{data-components.adherence.notes}}</li>
+                                  <li><span class="component-level-label">{{catalogComponentLabel data-components.name}}</span>{{data-components.adherence.notes}}</li>
                                 {{/if}}
                               {{/each}}
                             </ul>

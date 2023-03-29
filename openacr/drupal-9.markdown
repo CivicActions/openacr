@@ -1,4 +1,4 @@
-# Drupal Accessibility Conformance Report
+# Drupal
 
 Based on VPAT® 2.4 Revised Section 508 Edition
 
@@ -6,9 +6,11 @@ Based on VPAT® 2.4 Revised Section 508 Edition
 
 Drupal 9.1
 
-## Report Date
+## Report Dates and Version
 
-8/31/2021
+- Report Date: 8/31/2021
+- Last Modified Date: 11/16/2021
+- Version: drupal-9.1-12
 
 ## Product Description
 
@@ -29,7 +31,7 @@ Content Management System
 
 Links to the issues identified are included where possible to ensure that this is a living document where outstanding issues are regularly reviewed for compliance. The Authoring tool is evaluated against ATAG 2.0, Part A and B. Incorporating feedback from the Drupal community.
 
-## Evaluation Methods Used
+## Evaluation Methods
 
 Use of automated tools like WAVE and Accessibility Insights. Manual keyboard only testing. Some testing with JAWS, NVDA and VoiceOver. The evaluation process also includes a review of the Drupal Core accessibility issue queue.
 
@@ -50,13 +52,20 @@ The terms used in the Conformance Level information are defined as follows:
 - **Partially Supports**: Some functionality of the product does not meet the criterion.
 - **Does Not Support**: The majority of product functionality does not meet the criterion.
 - **Not Applicable**: The criterion is not relevant to the product.
-- **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.0 Level AAA.
+- **Not Evaluated**: The product has not been evaluated against the criterion. This can be used only in WCAG 2.x Level AAA.
 
 ## WCAG 2.0 Report
 
 ### Table 1: Success Criteria, Level A
 
 Notes: Drupal doesn&#x27;t make a strong distinction between the front-end &amp; back-end accessibility. Many administration interfaces can be exposed to users in a more interactive site. Generally this report focuses the Conformance Level / Remarks and Explainations so that Web comments are about elements that are typically public, while Authoring Tool is typically for authors and administrators. The goal of the authoring interface is to support ATAG 2.0 AA (Part A and B). The Drupal community strives to beek up with the latest WCAG recommendation.
+
+Conformance to the 25 criteria listed below is distributed as follows:
+
+- 58 supported
+- 3 partially supported
+- 5 not supported
+- 34 not applicable
 
 | Criteria                                                                                                           | Conformance Level                                                                                                                                                                 | Remarks and Explanations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -88,6 +97,13 @@ Notes: Drupal doesn&#x27;t make a strong distinction between the front-end &amp;
 
 ### Table 2: Success Criteria, Level AA
 
+Conformance to the 13 criteria listed below is distributed as follows:
+
+- 20 supported
+- 9 partially supported
+- 3 not supported
+- 16 not applicable
+
 | Criteria                                                                                                      | Conformance Level                                                                                                                                                                   | Remarks and Explanations                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [1.2.4 Captions (Live)](https://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions)                         | <ul><li>**Web**: Not Applicable</li><li>**Electronic Documents**: Not Applicable</li><li>**Software**: Not Applicable</li> </ul>                                                    | <ul> </ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -107,6 +123,13 @@ Notes: Drupal doesn&#x27;t make a strong distinction between the front-end &amp;
 ### Table 3: Success Criteria, Level AAA
 
 Notes: Where possible the Drupal community strives to exceed AA compliance.
+
+Conformance to the 23 criteria listed below is distributed as follows:
+
+- 7 supported
+- 1 partially supported
+- 0 not supported
+- 14 not applicable
 
 | Criteria                                                                                                | Conformance Level                              | Remarks and Explanations                                                                                                                               |
 | ------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -140,6 +163,13 @@ Notes: Where possible the Drupal community strives to exceed AA compliance.
 
 Notes: Not applicable.
 
+Conformance to the 9 criteria listed below is distributed as follows:
+
+- 5 supported
+- 0 partially supported
+- 0 not supported
+- 4 not applicable
+
 | Criteria                                                                                                  | Conformance Level                 | Remarks and Explanations                                                                           |
 | --------------------------------------------------------------------------------------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------- |
 | [302.1 Without Vision](https://www.access-board.gov/ict/#302.1)                                           | <ul><li>Supports</li> </ul>       | <ul><li>Testing has been done with JAWS, NVDA and VoiceOver.</li> </ul>                            |
@@ -163,6 +193,13 @@ Notes: Drupal is a web application. Software accessibility criteria is not appli
 ### Chapter 6: Support Documentation and Services
 
 Notes: Drupal is a web application and all support documentation is delivered through the web. Additional documentation and services are not available.
+
+Conformance to the 4 criteria listed below is distributed as follows:
+
+- 0 supported
+- 0 partially supported
+- 0 not supported
+- 4 not applicable
 
 | Criteria                                                                                                    | Conformance Level                 | Remarks and Explanations |
 | ----------------------------------------------------------------------------------------------------------- | --------------------------------- | ------------------------ |

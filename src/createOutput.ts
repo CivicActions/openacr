@@ -192,10 +192,10 @@ export function createOutput(
         <li>${notApplicableCount} not applicable</li>`
       );
     } else {
-      return `* ${supportCount} supported
-      * ${partiallySupportCount} partially supported
-      * ${doesNotSupportCount} not supported
-      * ${notApplicableCount} not applicable`;
+      return `- ${supportCount} supported
+- ${partiallySupportCount} partially supported
+- ${doesNotSupportCount} not supported
+- ${notApplicableCount} not applicable`;
     }
   });
 

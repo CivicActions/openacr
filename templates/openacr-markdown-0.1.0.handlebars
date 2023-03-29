@@ -5,12 +5,10 @@ Based on {{catalog.title}}
 ## Name of Product/Version
 {{product.name}}{{#if product.version}} {{product.version}}{{/if}}
 
-## Report Date
-{{#if report_date}}
-{{report_date}}
-{{else}}
-{{ now }}
-{{/if}}
+## Report Dates and Version
+- Report Date: {{report_date}}
+- Last Modified Date: {{last_modified_date}}
+- Version: {{reportFilename}}
 
 {{#if product.description}}
 ## Product Description
@@ -74,6 +72,10 @@ Notes: {{data-category.notes}}
 {{/if}}
 
 {{#if data-category.criteria}}
+Conformance to the {{data-category.criteria.length}} criteria listed below is distributed as follows:
+
+{{progressPerChapter data-category.criteria}}
+
 | Criteria | Conformance Level | Remarks and Explanations |
 | --- | --- | --- |
 {{#each data-category.criteria as |data-criteria|}}

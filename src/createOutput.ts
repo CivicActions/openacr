@@ -127,7 +127,7 @@ export function createOutput(
 
   Handlebars.registerHelper(
     "headerWithAnchor",
-    function (headerText, idText, headerLevel = 2) {
+    function (headerText, idText, headerLevel) {
       return new Handlebars.SafeString(`<h${headerLevel} id="${idText}">
         <a href="#${idText}" aria-hidden="true" class="header-anchor">#</a>
         ${headerText}
@@ -135,11 +135,8 @@ export function createOutput(
     }
   );
 
-  Handlebars.registerHelper("reportFilename", function (reportVersion = true) {
-    let reportFilename = "report";
-    if (data.product.name) {
-      reportFilename = data.product.name.toLowerCase();
-    }
+  Handlebars.registerHelper("reportFilename", function (reportVersion) {
+    let reportFilename = data.product.name.toLowerCase();
     if (data.product.version) {
       reportFilename += "-" + data.product.version;
     }
@@ -153,11 +150,9 @@ export function createOutput(
 
   Handlebars.registerHelper("levelCount", function (components) {
     let levelCount = 0;
-    if (components) {
-      for (const component of components) {
-        if (component.adherence.level) {
-          levelCount = levelCount + 1;
-        }
+    for (const component of components) {
+      if (component.adherence && component.adherence.level) {
+        levelCount = levelCount + 1;
       }
     }
     return levelCount;
@@ -168,16 +163,25 @@ export function createOutput(
     let partiallySupportCount = 0;
     let doesNotSupportCount = 0;
     let notApplicableCount = 0;
-    if (criterias) {
-      for (const criteria of criterias) {
+    for (const criteria of criterias) {
+      if (criteria.components) {
         for (const component of criteria.components) {
-          if (component.adherence.level === "supports") {
+          if (component.adherence && component.adherence.level === "supports") {
             supportCount = supportCount + 1;
-          } else if (component.adherence.level === "partially-supports") {
+          } else if (
+            component.adherence &&
+            component.adherence.level === "partially-supports"
+          ) {
             partiallySupportCount = partiallySupportCount + 1;
-          } else if (component.adherence.level === "does-not-support") {
+          } else if (
+            component.adherence &&
+            component.adherence.level === "does-not-support"
+          ) {
             doesNotSupportCount = doesNotSupportCount + 1;
-          } else if (component.adherence.level === "not-applicable") {
+          } else if (
+            component.adherence &&
+            component.adherence.level === "not-applicable"
+          ) {
             notApplicableCount = notApplicableCount + 1;
           }
         }

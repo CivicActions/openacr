@@ -71,6 +71,7 @@ The terms used in the Conformance Level information are defined as follows:
 Notes: {{data-category.notes}}
 {{/if}}
 
+{{#unless data-category.disabled}}
 {{#if data-category.criteria}}
 Conformance to the {{data-category.criteria.length}} criteria listed below is distributed as follows:
 
@@ -83,6 +84,7 @@ Conformance to the {{data-category.criteria.length}} criteria listed below is di
 {{/each}}
 
 {{/if}}
+{{/unless}}
 {{/with}}
 {{/with}}
 {{/each}}

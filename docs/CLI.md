@@ -79,7 +79,7 @@ You can test the CLI with the following example commands:
 npx ts-node src/openacr.ts validate -f tests/examples/valid.yaml # Output: Valid!
 npx ts-node src/openacr.ts validate -f tests/examples/invalid-basic.yaml # Output: Invalid: ...
 npx ts-node src/openacr.ts validate -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml # Output: Valid!
-npx ts-node src/openacr.ts validate -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml # Output: Valid!
+npx ts-node src/openacr.ts validate -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml # Output: Valid!
 npx ts-node src/openacr.ts validate -f tests/examples/invalid-criteria.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml # Output: Invalid: ...
 npx ts-node src/openacr.ts validate -f tests/examples/invalid-components.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml # Output: Invalid: ...
 npx ts-node src/openacr.ts validate -f tests/examples/invalid-components-criteria.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml # Output: Invalid: ...
@@ -88,9 +88,9 @@ npx ts-node src/openacr.ts validate -f tests/examples/valid.yaml -c tests/exampl
 npx ts-node src/openacr.ts validate -f tests/examples/valid.yaml -c tests/examples/catalog-different-components.yaml # Output: Invalid: ...
 # Validate and Output
 npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.markdown # Output: Valid ...
-npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/drupal-9.markdown # Output: Valid ...
+npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.markdown # Output: Valid ...
 # Use a different handlerbar template
-npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/drupal-9.html -t templates/openacr-simple-html-0.1.0.handlebars # Output: Valid ...
+npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.html -t templates/openacr-simple-html-0.1.0.handlebars # Output: Valid ...
 ```
 
 ## Schemas
@@ -127,9 +127,9 @@ We checked in an example of the markdown and HTML output in `tests/examples` and
 
 ```bash
 npm run generate-example-output # Full command `npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.markdown`
-npm run generate-drupal-output # Full command `npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/drupal-9.markdown`
+npm run generate-drupal-output # Full command `npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.markdown`
 npm run generate-example-html # Full command `npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.html`
-npm run generate-drupal-html # Full command `npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/drupal-9.html`
+npm run generate-drupal-html # Full command `npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.html`
 ```
 
 We also have a GitHub action called 'Drupal 9 OpenACRs output' that will generate the markdown and HTML versions of the Drupal 9 OpenACRs. It is run on pull requests, and the output can be downloaded to double-check it is matching expectations.
@@ -164,8 +164,8 @@ OpenACRs:
 To regenerate the above OpenACR markdown and HTML reports run the following commands:
 
 ```bash
-npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/drupal-9.html
-npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/drupal-9.markdown
+npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.html
+npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.markdown
 npx ts-node src/openacr.ts output -f openacr/govready-0.9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/govready-0.9.html
 npx ts-node src/openacr.ts output -f openacr/govready-0.9.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/govready-0.9.markdown
 npx ts-node src/openacr.ts output -f openacr/Moodle-3.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o openacr/Moodle-3.html

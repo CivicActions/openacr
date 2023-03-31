@@ -237,6 +237,7 @@
                 </div>
               {{/if}}
 
+              {{#unless data-category.disabled}}
               {{#if data-category.criteria}}
                 <div id="{{catalog-chapter.id}}-summary">
                   <p>
@@ -291,6 +292,7 @@
                 </table>
 
               {{/if}}
+              {{/unless}}
             {{/with}}
           {{/with}}
         {{/each}}

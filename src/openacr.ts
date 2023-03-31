@@ -94,9 +94,19 @@ if (fs.existsSync(argv.file)) {
       const outputFile = argv.outputFile ?? "output/openacr.markdown";
       const fileExt = outputFile.split(".").pop();
       if (fileExt === "html") {
-        const templateFile =
-          argv.templateFile ?? "templates/openacr-html-0.1.0.handlebars";
-        result = outputOpenACR(data, catalog, outputFile, true, templateFile);
+        let templateFile = "templates/openacr-html-0.1.0.handlebars";
+        let withStyles = true;
+        if (argv.templateFile) {
+          templateFile = argv.templateFile;
+          withStyles = false;
+        }
+        result = outputOpenACR(
+          data,
+          catalog,
+          outputFile,
+          withStyles,
+          templateFile
+        );
       } else {
         const templateFile =
           argv.templateFile ?? "templates/openacr-markdown-0.1.0.handlebars";

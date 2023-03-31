@@ -132,7 +132,7 @@ export function createOutput(
     function (headerText, idText, headerLevel) {
       return new Handlebars.SafeString(`<h${headerLevel} id="${idText}">
         ${headerText}
-        <a href="#${idText}" class="header-anchor" aria-labelledby="{idText}">
+        <a href="#${idText}" class="header-anchor">
           <span class="anchor-icon" aria-hidden="true">
             <svg
               focusable="false"

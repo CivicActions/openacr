@@ -92,6 +92,7 @@ if (fs.existsSync(argv.file)) {
           data,
           catalog,
           outputFile,
+          true,
           "templates/openacr-html-0.1.0.handlebars"
         );
       } else {

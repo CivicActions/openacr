@@ -195,7 +195,7 @@ describe("OpenACR CLI test output", () => {
       options.concat(
         "openacr/drupal-9.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508-en.yaml",
+        "catalog/2.4-edition-wcag-2.1-508-en.yaml",
         "-o",
         "output/drupal-9.markdown"
       )
@@ -221,7 +221,7 @@ describe("OpenACR CLI test output", () => {
       options.concat(
         "openacr/drupal-9.yaml",
         "-c",
-        "catalog/2.4-edition-wcag-2.0-508-en.yaml",
+        "catalog/2.4-edition-wcag-2.1-508-en.yaml",
         "-o",
         "output/drupal-9.html"
       )

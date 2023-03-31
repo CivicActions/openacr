@@ -1,5 +1,6 @@
 import Handlebars from "handlebars";
 import spdxLicenseList from "spdx-license-list";
+import { marked } from "marked";
 
 export function createOutput(
   data: any,
@@ -129,8 +130,18 @@ export function createOutput(
     "headerWithAnchor",
     function (headerText, idText, headerLevel) {
       return new Handlebars.SafeString(`<h${headerLevel} id="${idText}">
-        <a href="#${idText}" aria-hidden="true" class="header-anchor">#</a>
         ${headerText}
+        <a href="#${idText}" class="header-anchor" aria-labelledby="{idText}">
+          <span class="anchor-icon" aria-hidden="true">
+            <svg
+              focusable="false"
+              aria-hidden="true"
+              class="icon-link">
+                <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+            </svg>
+          </span>
+          <span class="visuallyhidden">Anchor link</span>
+        </a>
       </h${headerLevel}>`);
     }
   );
@@ -201,6 +212,11 @@ export function createOutput(
 - ${doesNotSupportCount} not supported
 - ${notApplicableCount} not applicable`;
     }
+  });
+
+  Handlebars.registerHelper("sanitizeMarkdown", function (text) {
+    const markdown = marked.parse(text);
+    return new Handlebars.SafeString(markdown);
   });
 
   return template(data);

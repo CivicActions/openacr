@@ -1,6 +1,7 @@
 import Handlebars from "handlebars";
 import spdxLicenseList from "spdx-license-list";
 import { marked } from "marked";
+import sanitizeHtml from "sanitize-html";
 
 export function createOutput(
   data: any,
@@ -101,7 +102,7 @@ export function createOutput(
         return new Handlebars.SafeString(
           `<a href="${spdxLicenseList[data.license].url}" target="_blank">${
             spdxLicenseList[data.license].name
-          } <span class="usa-sr-only">(opens in a new window or tab)</span></a>`
+          }<span class="usa-sr-only"> (opens in a new window or tab)</span></a>`
         );
       } else {
         return `[${spdxLicenseList[data.license].name}](${
@@ -111,7 +112,7 @@ export function createOutput(
     } else {
       if (templateType === "html") {
         return new Handlebars.SafeString(
-          `<a href="${spdxLicenseList["CC-BY-4.0"].url}" target="_blank">${spdxLicenseList["CC-BY-4.0"].name} <span class="usa-sr-only">(opens in a new window or tab)</span></a>`
+          `<a href="${spdxLicenseList["CC-BY-4.0"].url}" target="_blank">${spdxLicenseList["CC-BY-4.0"].name}<span class="usa-sr-only"> (opens in a new window or tab)</span></a>`
         );
       } else {
         return `[${spdxLicenseList["CC-BY-4.0"].name}](${spdxLicenseList["CC-BY-4.0"].url})`;
@@ -216,7 +217,7 @@ export function createOutput(
 
   Handlebars.registerHelper("sanitizeMarkdown", function (text) {
     const markdown = marked.parse(text);
-    return new Handlebars.SafeString(markdown);
+    return new Handlebars.SafeString(sanitizeHtml(markdown));
   });
 
   return template(data);

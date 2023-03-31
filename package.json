@@ -12,6 +12,7 @@
     "@types/marked": "^4.0.8",
     "@types/mocha": "^8.2.3",
     "@types/node": "^16.0.1",
+    "@types/sanitize-html": "^2.9.0",
     "@types/yargs": "^17.0.2",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
@@ -32,6 +33,7 @@
     "handlebars": "^4.7.7",
     "js-yaml": "^4.1.0",
     "marked": "^4.3.0",
+    "sanitize-html": "^2.10.0",
     "spdx-license-list": "^6.4.0",
     "uswds": "^2.12.1",
     "yargs": "^17.0.1"

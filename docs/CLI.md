@@ -90,7 +90,7 @@ npx ts-node src/openacr.ts validate -f tests/examples/valid.yaml -c tests/exampl
 npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.markdown # Output: Valid ...
 npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.markdown # Output: Valid ...
 # Use a different handlerbar template
-npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.html -t templates/openacr-simple-html-0.1.0.handlebars # Output: Valid ...
+npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9-simple.html -t templates/openacr-simple-html-0.1.0.handlebars # Output: Valid ...
 ```
 
 ## Schemas
@@ -130,6 +130,7 @@ npm run generate-example-output # Full command `npx ts-node src/openacr.ts outpu
 npm run generate-drupal-output # Full command `npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.markdown`
 npm run generate-example-html # Full command `npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.html`
 npm run generate-drupal-html # Full command `npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.html`
+npm run generate-drupal-simple # Full command `npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9-simple.html -t templates/openacr-simple-html-0.1.0.handlebar`
 ```
 
 We also have a GitHub action called 'Drupal 9 OpenACRs output' that will generate the markdown and HTML versions of the Drupal 9 OpenACRs. It is run on pull requests, and the output can be downloaded to double-check it is matching expectations.

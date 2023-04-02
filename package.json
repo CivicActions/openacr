@@ -45,6 +45,7 @@
     "generate-drupal-output": "npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.markdown",
     "generate-example-html": "npx ts-node src/openacr.ts output -f tests/examples/valid.yaml -c catalog/2.4-edition-wcag-2.0-508-en.yaml -o tests/examples/valid.html",
     "generate-drupal-html": "npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9.html",
+    "generate-drupal-simple": "npx ts-node src/openacr.ts output -f openacr/drupal-9.yaml -c catalog/2.4-edition-wcag-2.1-508-en.yaml -o openacr/drupal-9-simple.html -t templates/openacr-simple-html-0.1.0.handlebars",
     "generate-508-catalog": "npx ts-node src/librarian.ts -c 508",
     "generate-WCAG-catalog": "npx ts-node src/librarian.ts -c WCAG",
     "generate-WCAG21508-catalog": "npx ts-node src/librarian.ts -c WCAG21508",

@@ -1,4 +1,4 @@
-# GovReady PBC Accessibility Conformance Report
+# GovReady PBC
 
 Based on VPAT® 2.4 Revised Section 508 Edition
 

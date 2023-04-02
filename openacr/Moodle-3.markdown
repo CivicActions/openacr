@@ -1,4 +1,4 @@
-# Moodle Accessibility Conformance Report
+# Moodle
 
 Based on VPAT® 2.4 Revised Section 508 Edition
 

@@ -1,4 +1,4 @@
-# Plone Accessibility Conformance Report
+# Plone
 
 Based on VPAT® 2.4 Revised Section 508 Edition
 

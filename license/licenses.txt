@@ -282,7 +282,7 @@
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
 │  ├─ path: node_modules/@types/node
 │  └─ licenseFile: node_modules/@types/node/LICENSE
-├─ @types/sanitize-html@2.9.0
+├─ @types/sanitize-html@2.6.2
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/DefinitelyTyped/DefinitelyTyped
 │  ├─ path: node_modules/@types/sanitize-html
@@ -955,13 +955,6 @@
 │  ├─ email: me@feedic.com
 │  ├─ path: node_modules/dom-serializer
 │  └─ licenseFile: node_modules/dom-serializer/LICENSE
-├─ dom-serializer@2.0.0
-│  ├─ licenses: MIT
-│  ├─ repository: https://github.com/cheeriojs/dom-serializer
-│  ├─ publisher: Felix Boehm
-│  ├─ email: me@feedic.com
-│  ├─ path: node_modules/sanitize-html/node_modules/dom-serializer
-│  └─ licenseFile: node_modules/sanitize-html/node_modules/dom-serializer/LICENSE
 ├─ domelementtype@2.3.0
 │  ├─ licenses: BSD-2-Clause
 │  ├─ repository: https://github.com/fb55/domelementtype
@@ -2602,7 +2595,7 @@
 │  ├─ url: https://feross.org
 │  ├─ path: node_modules/string_decoder/node_modules/safe-buffer
 │  └─ licenseFile: node_modules/string_decoder/node_modules/safe-buffer/LICENSE
-├─ sanitize-html@2.10.0
+├─ sanitize-html@2.7.3
 │  ├─ licenses: MIT
 │  ├─ repository: https://github.com/apostrophecms/sanitize-html
 │  ├─ publisher: Apostrophe Technologies, Inc.

@@ -2341,11 +2341,4 @@ chapters:
             adherence:
               level: ""
               notes: ""
-vendor:
-  name: ""
-  company_name: ""
-  address: ""
-  email: ""
-  phone: ""
-  website: ""
 catalog: 2.4-edition-wcag-2.1-en

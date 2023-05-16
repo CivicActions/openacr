@@ -1,19 +1,19 @@
 title: Drupal
 product:
   name: Drupal
-  version: '10'
+  version: "10"
   description: >-
     Drupal is an open source content management platform supporting a variety of
     websites ranging from personal weblogs to large community-driven websites.
 author:
   name: Mike Gifford
   company_name: CivicActions
-  address: '3527 Mt Diablo Blvd, Unit 269, Lafayette, CA 94549'
+  address: "3527 Mt Diablo Blvd, Unit 269, Lafayette, CA 94549"
   email: mike.gifford@civicactions.com
   phone: (510) 408-7510
-  website: 'https://civicactions.com/'
-report_date: '2023-05-12'
-last_modified_date: '2023-05-16'
+  website: "https://civicactions.com/"
+report_date: "2023-05-12"
+last_modified_date: "2023-05-16"
 version: 15
 notes: >-
   Links to the issues identified are included where possible to ensure that this
@@ -29,12 +29,10 @@ legal_disclaimer: >-
   web application at the time of the review and does not represent a
   legally-binding claim. Please contact us to report any accessibility errors or
   conformance claim errors for re-evaluation and correction, if necessary.
-repository: 'https://github.com/GSA/openacr/blob/main/openacr/drupal-10.yaml'
-feedback: 'https://www.drupal.org/project/issues/drupal'
+repository: "https://github.com/CivicActions/openacr/blob/main/openacr/drupal-10-15.yaml"
+feedback: "https://www.drupal.org/project/issues/drupal"
 license: GPL-2.0-or-later
-related_openacrs:
-  - url: ''
-    type: secondary
+related_openacrs: []
 chapters:
   success_criteria_level_a:
     notes: >-
@@ -57,7 +55,7 @@ chapters:
                 improvements in the [outstanding
                 issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag111)
                 which relate to decorative and the password strength
-                indicator.  
+                indicator.
 
 
                 All open WCAG 1.1.1 issues:  3232414, 2514218, 3272325, 3230231,
@@ -71,7 +69,7 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
@@ -86,7 +84,7 @@ chapters:
                 Alternative text is required for images by default. [Outstanding
                 issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag111)
                 relate to thumbnail images, management of decorative images, and
-                messages icons.  
+                messages icons.
       - num: 1.2.1
         components:
           - name: web
@@ -102,7 +100,7 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: not-applicable
@@ -121,11 +119,11 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: not-applicable
@@ -150,7 +148,7 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: not-applicable
@@ -169,7 +167,7 @@ chapters:
                 ARIA landmarks and roles. There are also a number of errors tied
                 to forms (fieldsets, dates, radios &amp; checkboxes). There is
                 also more work needed to provide better semantics for Voice
-                Control and support for Windows High Contrast mode. 
+                Control and support for Windows High Contrast mode.
 
 
                 All open WCAG 1.3.1 issues: 3081500, 2951317, 3098857, 3347326,
@@ -178,11 +176,11 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
@@ -192,7 +190,7 @@ chapters:
                 issues are listed in the Web section. There are also
                 accessibility concerns with the vertical tabs and dashboards
                 available to users. Menu blocks are not getting the correct ID
-                in some instances. 
+                in some instances.
       - num: 1.3.2
         components:
           - name: web
@@ -205,11 +203,11 @@ chapters:
           - name: electronic-docs
             adherence:
               level: supports
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -227,11 +225,11 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -249,11 +247,11 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
@@ -271,19 +269,19 @@ chapters:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
       - num: 2.1.1
         components:
           - name: web
@@ -301,17 +299,17 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
               notes: >-
                 See remarks in Web section. [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag211). 
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag211).
       - num: 2.1.2
         components:
           - name: web
@@ -323,11 +321,11 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -343,11 +341,11 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -361,11 +359,11 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -379,11 +377,11 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -397,11 +395,11 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -419,7 +417,7 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -429,15 +427,15 @@ chapters:
           - name: web
             adherence:
               level: supports
-              notes: 'Pages are titled correctly. '
+              notes: "Pages are titled correctly. "
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -466,7 +464,7 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -481,15 +479,15 @@ chapters:
               notes: >-
                 Careful attention has been paid to ensure that automated "Read
                 More" links are available in a way that is available with
-                contextual information for screen readers. 
+                contextual information for screen readers.
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
@@ -497,7 +495,7 @@ chapters:
                 Generally very well-supported. [Outstanding
                 issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag242)
                 with truncation of the path alias and duplicate links on edit
-                content page. 
+                content page.
 
 
                 All open WCAG 2.4.2 issues: 3351638, 2852898
@@ -506,33 +504,33 @@ chapters:
           - name: web
             adherence:
               level: supports
-              notes: 'No known challenges with pointer gestures. '
+              notes: "No known challenges with pointer gestures. "
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: not-applicable
-              notes: 'No known challenges with pointer gestures. '
+              notes: "No known challenges with pointer gestures. "
       - num: 2.5.2
         components:
           - name: web
             adherence:
               level: supports
-              notes: 'No known problems for users with pointer cancellation. '
+              notes: "No known problems for users with pointer cancellation. "
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
@@ -541,7 +539,7 @@ chapters:
                 [Outstanding
                 issue(s)](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag252)
                 with truncation of the path alias and duplicate links on edit
-                content page. 
+                content page.
 
 
                 All open WCAG 2.5.2 issue(s): 2616184
@@ -550,19 +548,19 @@ chapters:
           - name: web
             adherence:
               level: supports
-              notes: 'No known problems with labels in name. '
+              notes: "No known problems with labels in name. "
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
-              notes: 'See the Web section. '
+              notes: "See the Web section. "
       - num: 2.5.4
         components:
           - name: web
@@ -572,15 +570,15 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
-              notes: 'See Web section. '
+              notes: "See Web section. "
       - num: 3.1.1
         components:
           - name: web
@@ -594,13 +592,13 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
               notes: >-
                 [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag311).  
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag311).
 
 
                 All open WCAG 3.1.1 issue(s): 3081526
@@ -621,7 +619,7 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -645,7 +643,7 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -660,10 +658,10 @@ chapters:
               notes: >-
                 The Inline Form Error module needs to be enabled site-wide on
                 installation. [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag311). 
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag311).
                 Most of these issues are also authoring interface, but there are
                 problems with HTML5 validation, child groupings, required
-                errors, and file uploading. 
+                errors, and file uploading.
 
 
                 All open WCAG 3.3.1 issues: 3059955, 1797438, 2848507, 2563173,
@@ -671,18 +669,18 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
               notes: >-
                 See the Web section as most of these [outstanding
                 issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag311)
-                are also likely on the user side. 
+                are also likely on the user side.
       - num: 3.3.2
         components:
           - name: web
@@ -692,18 +690,18 @@ chapters:
                 Default forms all include labels. [Outstanding
                 issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag332)
                 include a lack of 'aria-describedby' and grouped fields missing
-                labels. 
+                labels.
 
 
                 All open WCAG 3.3.2 issues: 2998857, 2608212
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
@@ -729,14 +727,14 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
               notes: >-
                 Generally parsing is very well-supported, but there are a few
                 places where this needs to be improved. [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag411). 
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag411).
 
 
                 All open WCAG 4.1.1 issue(s):  3174459
@@ -753,7 +751,7 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -762,7 +760,7 @@ chapters:
                 has been overlooked. [Outstanding
                 issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag412).
                 There are semantics missing for aria elements in the block,
-                forms, and contextual modules. 
+                forms, and contextual modules.
 
 
                 All open WCAG 4.1.2 issues:  3083181, 2852724, 3218877, 3028780,
@@ -774,19 +772,19 @@ chapters:
           - name: web
             adherence:
               level: not-applicable
-              notes: 'This is not a feature supported in Drupal Core. '
+              notes: "This is not a feature supported in Drupal Core. "
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
       - num: 1.2.5
         components:
           - name: web
@@ -804,7 +802,7 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: does-not-support
@@ -816,38 +814,38 @@ chapters:
         components:
           - name: web
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 1.3.5
         components:
           - name: web
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 1.4.3
         components:
           - name: web
@@ -858,7 +856,7 @@ chapters:
                 both user and author interfaces. Asterisks, form labels,
                 disabled form elements, and some dialogs require additional
                 contrast to meet 1.4.3 requirements. [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag143). 
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag143).
 
 
                 All open WCAG 1.4.3 issue(s): 3266299, 3040673, 3231744,
@@ -870,23 +868,23 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
               notes: >-
                 Generally meets requirements. Form elements described in the web
                 section affect both user and author interfaces.  [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag143).  
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag143).
       - num: 1.4.4
         components:
           - name: web
             adherence:
               level: partially-supports
               notes: >-
-                Generally support with a minor exception with focus outlines. 
+                Generally support with a minor exception with focus outlines.
                 [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag144). 
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag144).
 
 
                 All WCAG 1.4.4 issues: 3068698, 3238618
@@ -897,28 +895,28 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
               notes: >-
                 Generally support with some minor exception with limited
                 horizontal space.  [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag144). 
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag144).
       - num: 1.4.5
         components:
           - name: web
             adherence:
               level: supports
-              notes: 'There are no images of text in the user interface. '
+              notes: "There are no images of text in the user interface. "
           - name: electronic-docs
             adherence:
               level: supports
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -934,7 +932,7 @@ chapters:
               notes: >-
                 Generally meets. Some issues with long words, responsive tables,
                 resizing menus, and wide screen layout. [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1410). 
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1410).
 
 
                 All open WCAG 1.4.10 issues: 3159896, 3177475, 2280035, 3191806,
@@ -942,20 +940,20 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
               notes: >-
                 Many of the same issues with the public user interface, also
                 apply to author interfaces. Generally support with some minor
-                exception with the action links on the modules page. 
+                exception with the action links on the modules page.
                 [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1410). 
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1410).
       - num: 1.4.11
         components:
           - name: web
@@ -964,7 +962,7 @@ chapters:
               notes: >-
                 Generally meets. There are still some images that need to have
                 their contrast increased.  [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411). 
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411).
 
 
                 All open WCAG 1.4.11 issues: 3097907, 2910102, 3171726, 3272266,
@@ -972,43 +970,43 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
               notes: >-
                 Generally supports, In addition to the Web section, there are
                 some specific color contrast errors with the Claro theme and
-                contextual links. 
+                contextual links.
 
 
                 [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411). 
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411).
       - num: 1.4.12
         components:
           - name: web
             adherence:
               level: supports
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
               notes: >+
                 Generally supports. There is a known issue with off-canvas
                 dialogs. [Outstanding
-                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411). 
+                issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag1411).
 
 
                 All open WCAG 1.4.12 issues: 2919837
@@ -1018,19 +1016,19 @@ chapters:
           - name: web
             adherence:
               level: supports
-              notes: 'No known problems. '
+              notes: "No known problems. "
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
-              notes: 'No known problems. '
+              notes: "No known problems. "
       - num: 2.4.5
         components:
           - name: web
@@ -1048,21 +1046,21 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
       - num: 2.4.6
         components:
           - name: web
             adherence:
               level: supports
-              notes: 'Generally there is very good support. '
+              notes: "Generally there is very good support. "
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -1072,15 +1070,15 @@ chapters:
           - name: web
             adherence:
               level: partially-supports
-              notes: 'Focus elements are well established for the front-end. '
+              notes: "Focus elements are well established for the front-end. "
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: partially-supports
@@ -1089,7 +1087,7 @@ chapters:
                 issues](https://www.drupal.org/project/issues/search/drupal?text=&amp;assigned=&amp;submitted=&amp;project_issue_followers=&amp;status%5B%5D=Open&amp;version%5B%5D=any_10.&amp;issue_tags_op=%3D&amp;issue_tags=wcag247).
                 A block can be added with layout builder that stops authors from
                 escaping focus. The image style page also has a hidden focus
-                element.  
+                element.
 
 
                 All open WCAG 2.47 issues: 3302103, 3273099
@@ -1106,11 +1104,11 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -1141,8 +1139,8 @@ chapters:
                 the site.
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 3.2.4
         components:
           - name: web
@@ -1165,8 +1163,8 @@ chapters:
                 identified consistently.
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 3.3.3
         components:
           - name: web
@@ -1178,11 +1176,11 @@ chapters:
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -1202,7 +1200,7 @@ chapters:
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
@@ -1214,20 +1212,20 @@ chapters:
           - name: web
             adherence:
               level: supports
-              notes: 'No known problems with status messages. '
+              notes: "No known problems with status messages. "
           - name: electronic-docs
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: software
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: authoring-tool
             adherence:
               level: supports
-              notes: 'No known problems with status messages. '
-    notes: ''
+              notes: "No known problems with status messages. "
+    notes: ""
   success_criteria_level_aaa:
     notes: Where possible the Drupal community strives to exceed AA compliance.
     criteria:
@@ -1236,91 +1234,91 @@ chapters:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 1.2.7
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 1.2.8
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 1.2.9
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 1.3.6
         components:
           - name: web
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 1.4.6
         components:
           - name: web
@@ -1331,34 +1329,34 @@ chapters:
                 to comply.
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 1.4.7
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 1.4.8
         components:
           - name: web
@@ -1369,16 +1367,16 @@ chapters:
                 user agents, so aside from line spacing this generally works.
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 1.4.9
         components:
           - name: web
@@ -1387,16 +1385,16 @@ chapters:
               notes: Text images are all supplied by the author.
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 2.1.3
         components:
           - name: web
@@ -1405,16 +1403,16 @@ chapters:
               notes: The web front-end is not a barrier to keyboard only users.
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 2.2.3
         components:
           - name: web
@@ -1425,70 +1423,70 @@ chapters:
                 with disabilities.
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 2.2.4
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 2.2.5
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 2.2.6
         components:
           - name: web
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 2.3.2
         components:
           - name: web
@@ -1497,34 +1495,34 @@ chapters:
               notes: There is no flashing content.
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 2.3.3
         components:
           - name: web
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 2.4.8
         components:
           - name: web
@@ -1535,16 +1533,16 @@ chapters:
                 provide additional means for navigation.
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 2.4.9
         components:
           - name: web
@@ -1555,16 +1553,16 @@ chapters:
                 descriptive titles.
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 2.4.10
         components:
           - name: web
@@ -1575,219 +1573,219 @@ chapters:
                 section of content.
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 2.5.5
         components:
           - name: web
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 2.5.6
         components:
           - name: web
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 3.1.3
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 3.1.4
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 3.1.5
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 3.1.6
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 3.2.5
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 3.3.5
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 3.3.6
         components:
           - name: web
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
           - name: electronic-docs
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: software
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
           - name: authoring-tool
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
     disabled: true
   functional_performance_criteria:
     notes: Not applicable.
     criteria:
-      - num: '302.1'
+      - num: "302.1"
         components:
           - name: none
             adherence:
               level: supports
-              notes: 'Testing has been done with JAWS, NVDA and VoiceOver.'
-      - num: '302.2'
+              notes: "Testing has been done with JAWS, NVDA and VoiceOver."
+      - num: "302.2"
         components:
           - name: none
             adherence:
               level: supports
               notes: Testing has been done with browser zoom and ZoomText.
-      - num: '302.3'
+      - num: "302.3"
         components:
           - name: none
             adherence:
               level: supports
               notes: The interface has been reviewed for use of color.
-      - num: '302.4'
+      - num: "302.4"
         components:
           - name: none
             adherence:
               level: not-applicable
-              notes: ''
-      - num: '302.5'
+              notes: ""
+      - num: "302.5"
         components:
           - name: none
             adherence:
               level: not-applicable
-              notes: ''
-      - num: '302.6'
+              notes: ""
+      - num: "302.6"
         components:
           - name: none
             adherence:
               level: not-applicable
-              notes: ''
-      - num: '302.7'
+              notes: ""
+      - num: "302.7"
         components:
           - name: none
             adherence:
@@ -1795,7 +1793,7 @@ chapters:
               notes: >-
                 Drupal's interface does not restrict users with limited
                 manipulation.
-      - num: '302.8'
+      - num: "302.8"
         components:
           - name: none
             adherence:
@@ -1803,12 +1801,12 @@ chapters:
               notes: >-
                 Drupal's interface does not restrict users with limited reach or
                 strength.
-      - num: '302.9'
+      - num: "302.9"
         components:
           - name: none
             adherence:
               level: not-applicable
-              notes: ''
+              notes: ""
     disabled: true
   hardware:
     notes: >-
@@ -1819,332 +1817,332 @@ chapters:
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 402.2.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 402.2.3
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 402.2.4
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 402.2.5
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 402.3.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 402.3.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '402.4'
+              level: ""
+              notes: ""
+      - num: "402.4"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '402.5'
+              level: ""
+              notes: ""
+      - num: "402.5"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '403.1'
+              level: ""
+              notes: ""
+      - num: "403.1"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '404.1'
+              level: ""
+              notes: ""
+      - num: "404.1"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '405.1'
+              level: ""
+              notes: ""
+      - num: "405.1"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '406.1'
+              level: ""
+              notes: ""
+      - num: "406.1"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '407.2'
+              level: ""
+              notes: ""
+      - num: "407.2"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.3.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.3.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.3.3
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '407.4'
+              level: ""
+              notes: ""
+      - num: "407.4"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '407.5'
+              level: ""
+              notes: ""
+      - num: "407.5"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '407.6'
+              level: ""
+              notes: ""
+      - num: "407.6"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '407.7'
+              level: ""
+              notes: ""
+      - num: "407.7"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.8.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.8.1.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.8.1.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.8.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.8.2.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.8.2.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.8.3
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.8.3.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.8.3.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.8.3.2.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 407.8.3.2.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '408.2'
+              level: ""
+              notes: ""
+      - num: "408.2"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '408.3'
+              level: ""
+              notes: ""
+      - num: "408.3"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '409.1'
+              level: ""
+              notes: ""
+      - num: "409.1"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '410.1'
+              level: ""
+              notes: ""
+      - num: "410.1"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '411.1'
+              level: ""
+              notes: ""
+      - num: "411.1"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 412.2.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 412.2.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 412.3.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 412.3.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '412.4'
+              level: ""
+              notes: ""
+      - num: "412.4"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '412.5'
+              level: ""
+              notes: ""
+      - num: "412.5"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '412.6'
+              level: ""
+              notes: ""
+      - num: "412.6"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '412.7'
+              level: ""
+              notes: ""
+      - num: "412.7"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 412.8.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 412.8.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 412.8.3
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 412.8.4
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 413.1.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 413.1.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 414.1.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 414.1.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 415.1.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 415.1.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
     disabled: true
   software:
     notes: >-
@@ -2155,199 +2153,199 @@ chapters:
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.2.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.3
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.4
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.5
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.6
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.7
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.8
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.9
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.10
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.11
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.12
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.13
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 502.3.14
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '502.4'
+              level: ""
+              notes: ""
+      - num: "502.4"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '503.2'
+              level: ""
+              notes: ""
+      - num: "503.2"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '503.3'
+              level: ""
+              notes: ""
+      - num: "503.3"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 503.4.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 503.4.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '504.2'
+              level: ""
+              notes: ""
+      - num: "504.2"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 504.2.1
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
       - num: 504.2.2
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '504.3'
+              level: ""
+              notes: ""
+      - num: "504.3"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
-      - num: '504.4'
+              level: ""
+              notes: ""
+      - num: "504.4"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
     disabled: true
   support_documentation_and_services:
     notes: >-
       Drupal is a web application and all support documentation is delivered
       through the web. Additional documentation and services are not available.
     criteria:
-      - num: '602.2'
+      - num: "602.2"
         components:
           - name: none
             adherence:
               level: not-applicable
-              notes: ''
-      - num: '602.4'
+              notes: ""
+      - num: "602.4"
         components:
           - name: none
             adherence:
               level: not-applicable
-              notes: ''
-      - num: '603.2'
+              notes: ""
+      - num: "603.2"
         components:
           - name: none
             adherence:
               level: not-applicable
-              notes: ''
-      - num: '603.3'
+              notes: ""
+      - num: "603.3"
         components:
           - name: none
             adherence:
               level: not-applicable
-              notes: ''
-      - num: '602.3'
+              notes: ""
+      - num: "602.3"
         components:
           - name: none
             adherence:
-              level: ''
-              notes: ''
+              level: ""
+              notes: ""
 vendor:
-  name: ''
-  company_name: ''
-  address: ''
-  email: ''
-  phone: ''
-  website: ''
+  name: ""
+  company_name: ""
+  address: ""
+  email: ""
+  phone: ""
+  website: ""
 catalog: 2.4-edition-wcag-2.1-en

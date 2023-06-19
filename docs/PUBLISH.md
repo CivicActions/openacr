@@ -1,10 +1,15 @@
 We have published OpenACR to NPM.
 
-URL: https://www.npmjs.com/package/@openacr/openacr
+URL: https://www.npmjs.com/package/@civicactions/openacr
 
 ## Organization
 
-The above package is under the organization https://www.npmjs.com/org/openacr.
+The above package is under the organization https://www.npmjs.com/org/civicactions.
+
+## Build CLI version manually
+
+1. Run `npm run build` to build latest CLI version.
+2. Run `./bin/openacr.js` to test that it works as expected.
 
 ## Build CLI version manually
 

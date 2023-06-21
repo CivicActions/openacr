@@ -1,146 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Drupal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Drupal</title>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="uswds/js/uswds-init.min.js"
+    ></script>
+    <link rel="stylesheet" href="uswds/css/uswds.min.css" />
+    <link rel="stylesheet" href="openacr.css" />
+    <link rel="stylesheet" href="custom.css" />
   </head>
-  <body id="openACR">
-    <style>
-      body#openACR {
-        padding-left: 35px;
-      }
-      h2,
-      h3 {
-        position: relative;
-      }
-      h2 a.header-anchor,
-      h3 a.header-anchor {
-        position: absolute;
-        left: -2rem;
-      }
-      h2 a.header-anchor:hover svg,
-      h2 a.header-anchor:focus svg,
-      h2 a.header-anchor:focus-within svg,
-      h3 a.header-anchor:hover svg,
-      h3 a.header-anchor:focus svg,
-      h3 a.header-anchor:focus-within svg {
-        fill: #0000ee;
-        opacity: 1;
-      }
-      h2 a.header-anchor svg,
-      h3 a.header-anchor svg {
-        width: 28px;
-        height: 28px;
-        opacity: 0.3;
-      }
-      @media all and (max-width: 63.99em) {
-        h2 a.header-anchor,
-        h3 a.header-anchor {
-          position: relative;
-          opacity: 1;
-          left: 0;
-          vertical-align: top;
-        }
-      }
-      a.header-anchor {
-        opacity: 0.4;
-        font-size: small;
-        text-decoration: none;
-        position: relative;
-        /* left: 20px; */
-        -webkit-transition: opacity 1s, font-size 1s;
-        -moz-transition: opacity 1s, font-size 1s;
-        -o-transition: opacity 1s, font-size 1s;
-        transition: opacity 1s, font-size 1s;
-      }
-      a.header-anchor:focus,
-      a.header-anchor:hover {
-        text-decoration: underline;
-        font-size: large;
-        opacity: 1;
-      }
-      .visuallyhidden {
-        border: 0;
-        clip: rect(0 0 0 0);
-        clip-path: inset(50%);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-        white-space: nowrap;
-        &.focusable {
-          &:active,
-          &:focus {
-            clip: auto;
-            clip-path: none;
-            height: auto;
-            margin: 0;
-            overflow: visible;
-            position: static;
-            width: auto;
-            white-space: inherit;
-          }
-        }
-      }
-      .applicable-standards-guidelines-table th:nth-child(1) {
-        width: 40%;
-      }
-      .applicable-standards-guidelines-table th:nth-child(2) {
-        width: 60%;
-      }
-      /* If only one level then hide the label. */
-      .component-level-count-1 .component-level-label {
-        display: none;
-      }
-    </style>
+  <body>
+    <script
+      type="text/javascript"
+      charset="utf8"
+      src="uswds/js/uswds.min.js"
+    ></script>
     <main>
       <div class="grid-container">
-        <h1 class="svelte-1nee40z">
+        <h1>
           <span class="evaluation-title">Drupal</span> Accessibility Conformance
           Report
         </h1>
+
         <div class="catalog-section">Based on VPAT® 2.4</div>
+
         <div class="product-section">
-          <h2 id="name-of-product-version-download" class="svelte-1y7sq6j">
+          <h2 id="name-of-product-version">
             Name of Product/Version
-            <a
-              href="#name-of-product-version-download"
-              class="header-anchor svelte-1y7sq6j"
-              ><span class="anchor-icon" aria-hidden="true"
-                ><svg
-                  focusable="false"
-                  aria-hidden="true"
-                  class="icon-link svelte-1y7sq6j"
-                >
+            <a href="#name-of-product-version" class="header-anchor">
+              <span class="anchor-icon" aria-hidden="true">
+                <svg focusable="false" aria-hidden="true" class="icon-link">
                   <path
                     d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  ></path></svg
-              ></span>
-              <span class="visuallyhidden">Anchor link</span></a
-            >
+                  />
+                </svg>
+              </span>
+              <span class="visuallyhidden">Anchor link</span>
+            </a>
           </h2>
           Drupal 10
         </div>
+
         <div class="report-dates-ver-section">
-          <h2 id="report-date-download" class="svelte-1y7sq6j">
+          <h2 id="report-date">
             Report Dates and Version
-            <a href="#report-date-download" class="header-anchor svelte-1y7sq6j"
-              ><span class="anchor-icon" aria-hidden="true"
-                ><svg
-                  focusable="false"
-                  aria-hidden="true"
-                  class="icon-link svelte-1y7sq6j"
-                >
+            <a href="#report-date" class="header-anchor">
+              <span class="anchor-icon" aria-hidden="true">
+                <svg focusable="false" aria-hidden="true" class="icon-link">
                   <path
                     d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  ></path></svg
-              ></span>
-              <span class="visuallyhidden">Anchor link</span></a
-            >
+                  />
+                </svg>
+              </span>
+              <span class="visuallyhidden">Anchor link</span>
+            </a>
           </h2>
           <ul>
             <li>Report Date: 2023-05-12</li>
@@ -148,24 +66,20 @@
             <li>Version: drupal-10-16</li>
           </ul>
         </div>
+
         <div class="description-section">
-          <h2 id="product-description-download" class="svelte-1y7sq6j">
+          <h2 id="product-description">
             Product Description
-            <a
-              href="#product-description-download"
-              class="header-anchor svelte-1y7sq6j"
-              ><span class="anchor-icon" aria-hidden="true"
-                ><svg
-                  focusable="false"
-                  aria-hidden="true"
-                  class="icon-link svelte-1y7sq6j"
-                >
+            <a href="#product-description" class="header-anchor">
+              <span class="anchor-icon" aria-hidden="true">
+                <svg focusable="false" aria-hidden="true" class="icon-link">
                   <path
                     d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  ></path></svg
-              ></span>
-              <span class="visuallyhidden">Anchor link</span></a
-            >
+                  />
+                </svg>
+              </span>
+              <span class="visuallyhidden">Anchor link</span>
+            </a>
           </h2>
           <p>
             Drupal is an open source content management platform supporting a
@@ -173,41 +87,34 @@
             community-driven websites.
           </p>
         </div>
+
         <div id="contact-section">
-          <h2 id="contact-information-download" class="svelte-1y7sq6j">
+          <h2 id="contact-information">
             Contact Information
-            <a
-              href="#contact-information-download"
-              class="header-anchor svelte-1y7sq6j"
-              ><span class="anchor-icon" aria-hidden="true"
-                ><svg
-                  focusable="false"
-                  aria-hidden="true"
-                  class="icon-link svelte-1y7sq6j"
-                >
+            <a href="#contact-information" class="header-anchor">
+              <span class="anchor-icon" aria-hidden="true">
+                <svg focusable="false" aria-hidden="true" class="icon-link">
                   <path
                     d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  ></path></svg
-              ></span>
-              <span class="visuallyhidden">Anchor link</span></a
-            >
+                  />
+                </svg>
+              </span>
+              <span class="visuallyhidden">Anchor link</span>
+            </a>
           </h2>
           <div class="author-section">
-            <h3 id="author-download" class="svelte-1y7sq6j">
+            <h3 id="author">
               Author Information
-              <a href="#author-download" class="header-anchor svelte-1y7sq6j"
-                ><span class="anchor-icon" aria-hidden="true"
-                  ><svg
-                    focusable="false"
-                    aria-hidden="true"
-                    class="icon-link svelte-1y7sq6j"
-                  >
+              <a href="#author" class="header-anchor">
+                <span class="anchor-icon" aria-hidden="true">
+                  <svg focusable="false" aria-hidden="true" class="icon-link">
                     <path
                       d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                    ></path></svg
-                ></span>
-                <span class="visuallyhidden">Anchor link</span></a
-              >
+                    />
+                  </svg>
+                </span>
+                <span class="visuallyhidden">Anchor link</span>
+              </a>
             </h3>
             <ul>
               <li>Name: Mike Gifford</li>
@@ -217,20 +124,14 @@
               </li>
               <li>
                 Email:
-                <a href="mailto:mike.gifford@civicactions.com" target="_blank"
-                  >mike.gifford@civicactions.com<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
+                <a href="mailto:mike.gifford@civicactions.com"
+                  >mike.gifford@civicactions.com</a
                 >
               </li>
               <li>Phone: (510) 408-7510</li>
               <li>
                 Website:
-                <a href="https://civicactions.com" target="_blank"
-                  >https://civicactions.com<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
-                >
+                <a href="https://civicactions.com">https://civicactions.com</a>
               </li>
             </ul>
           </div>
@@ -253,39 +154,34 @@
           <div class="vendor-section">
             <h3 id="vendor-download" class="svelte-1y7sq6j">
               Vendor Information
-              <a href="#vendor-download" class="header-anchor svelte-1y7sq6j"
-                ><span class="anchor-icon" aria-hidden="true"
-                  ><svg
-                    focusable="false"
-                    aria-hidden="true"
-                    class="icon-link svelte-1y7sq6j"
-                  >
+              <a href="#vendor" class="header-anchor">
+                <span class="anchor-icon" aria-hidden="true">
+                  <svg focusable="false" aria-hidden="true" class="icon-link">
                     <path
                       d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                    ></path></svg
-                ></span>
-                <span class="visuallyhidden">Anchor link</span></a
-              >
+                    />
+                  </svg>
+                </span>
+                <span class="visuallyhidden">Anchor link</span>
+              </a>
             </h3>
             <ul></ul>
           </div>
         </div>
+
         <div class="notes-section">
-          <h2 id="notes-download" class="svelte-1y7sq6j">
+          <h2 id="notes">
             Notes
-            <a href="#notes-download" class="header-anchor svelte-1y7sq6j"
-              ><span class="anchor-icon" aria-hidden="true"
-                ><svg
-                  focusable="false"
-                  aria-hidden="true"
-                  class="icon-link svelte-1y7sq6j"
-                >
+            <a href="#notes" class="header-anchor">
+              <span class="anchor-icon" aria-hidden="true">
+                <svg focusable="false" aria-hidden="true" class="icon-link">
                   <path
                     d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  ></path></svg
-              ></span>
-              <span class="visuallyhidden">Anchor link</span></a
-            >
+                  />
+                </svg>
+              </span>
+              <span class="visuallyhidden">Anchor link</span>
+            </a>
           </h2>
           <p>
             Links to the issues identified are included where possible to ensure
@@ -295,24 +191,20 @@
             Drupal community.
           </p>
         </div>
+
         <div class="eval-section">
-          <h2 id="evaluation-methods-download" class="svelte-1y7sq6j">
+          <h2 id="evaluation-methods">
             Evaluation Methods
-            <a
-              href="#evaluation-methods-download"
-              class="header-anchor svelte-1y7sq6j"
-              ><span class="anchor-icon" aria-hidden="true"
-                ><svg
-                  focusable="false"
-                  aria-hidden="true"
-                  class="icon-link svelte-1y7sq6j"
-                >
+            <a href="#evaluation-methods" class="header-anchor">
+              <span class="anchor-icon" aria-hidden="true">
+                <svg focusable="false" aria-hidden="true" class="icon-link">
                   <path
                     d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  ></path></svg
-              ></span>
-              <span class="visuallyhidden">Anchor link</span></a
-            >
+                  />
+                </svg>
+              </span>
+              <span class="visuallyhidden">Anchor link</span>
+            </a>
           </h2>
           <p>
             Use of automated tools like WAVE and Accessibility Insights. Manual
@@ -321,33 +213,23 @@
             accessibility issue queue.
           </p>
         </div>
+
         <div class="standards-section">
-          <h2
-            id="applicable-standards-guidelines-download"
-            class="svelte-1y7sq6j"
-          >
+          <h2 id="applicable-standards-guidelines">
             Applicable Standards/Guidelines
-            <a
-              href="#applicable-standards-guidelines-download"
-              class="header-anchor svelte-1y7sq6j"
-              ><span class="anchor-icon" aria-hidden="true"
-                ><svg
-                  focusable="false"
-                  aria-hidden="true"
-                  class="icon-link svelte-1y7sq6j"
-                >
+            <a href="#applicable-standards-guidelines" class="header-anchor">
+              <span class="anchor-icon" aria-hidden="true">
+                <svg focusable="false" aria-hidden="true" class="icon-link">
                   <path
                     d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  ></path></svg
-              ></span>
-              <span class="visuallyhidden">Anchor link</span></a
-            >
+                  />
+                </svg>
+              </span>
+              <span class="visuallyhidden">Anchor link</span>
+            </a>
           </h2>
-          <table
-            class="usa-table applicable-standards-guidelines-table"
-            border="1"
-            style="border-collapse: collapse"
-          >
+
+          <table class="usa-table applicable-standards-guidelines-table">
             <caption>
               This report covers the degree of conformance for the following
               accessibility standard/guidelines:
@@ -363,8 +245,9 @@
                 <td>
                   <a href="https://www.w3.org/TR/WCAG21/" target="_blank"
                     >Web Content Accessibility Guidelines 2.1<span
-                      class="visuallyhidden"
-                      >(opens in a new window or tab)</span
+                      class="usa-sr-only"
+                    >
+                      (opens in a new window or tab)</span
                     ></a
                   >
                 </td>
@@ -379,22 +262,20 @@
             </tbody>
           </table>
         </div>
+
         <div class="terms-section">
-          <h2 id="terms-download" class="svelte-1y7sq6j">
+          <h2 id="terms">
             Terms
-            <a href="#terms-download" class="header-anchor svelte-1y7sq6j"
-              ><span class="anchor-icon" aria-hidden="true"
-                ><svg
-                  focusable="false"
-                  aria-hidden="true"
-                  class="icon-link svelte-1y7sq6j"
-                >
+            <a href="#terms" class="header-anchor">
+              <span class="anchor-icon" aria-hidden="true">
+                <svg focusable="false" aria-hidden="true" class="icon-link">
                   <path
                     d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                  ></path></svg
-              ></span>
-              <span class="visuallyhidden">Anchor link</span></a
-            >
+                  />
+                </svg>
+              </span>
+              <span class="visuallyhidden">Anchor link</span>
+            </a>
           </h2>
           The terms used in the Conformance Level information are defined as
           follows:
@@ -423,40 +304,35 @@
             </li>
           </ul>
         </div>
-        <h2 id="wcag-2.1-download" class="svelte-1y7sq6j">
+
+        <h2 id="wcag-2.1">
           WCAG 2.1 Report
-          <a href="#wcag-2.1-download" class="header-anchor svelte-1y7sq6j"
-            ><span class="anchor-icon" aria-hidden="true"
-              ><svg
-                focusable="false"
-                aria-hidden="true"
-                class="icon-link svelte-1y7sq6j"
-              >
+          <a href="#wcag-2.1" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
                 <path
                   d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                ></path></svg
-            ></span>
-            <span class="visuallyhidden">Anchor link</span></a
-          >
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
         </h2>
-        <h3 id="success_criteria_level_a-download" class="svelte-1y7sq6j">
+
+        <h3 id="success_criteria_level_a">
           Table 1: Success Criteria, Level A
-          <a
-            href="#success_criteria_level_a-download"
-            class="header-anchor svelte-1y7sq6j"
-            ><span class="anchor-icon" aria-hidden="true"
-              ><svg
-                focusable="false"
-                aria-hidden="true"
-                class="icon-link svelte-1y7sq6j"
-              >
+          <a href="#success_criteria_level_a" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
                 <path
                   d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                ></path></svg
-            ></span>
-            <span class="visuallyhidden">Anchor link</span></a
-          >
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
         </h3>
+
         <div id="success_criteria_level_a-notes" class="chapter-notes-section">
           Notes:
           <p>
@@ -471,6 +347,7 @@
             WCAG recommendation.
           </p>
         </div>
+
         <div id="success_criteria_level_a-summary">
           <table class="usa-table">
             <caption>
@@ -516,31 +393,29 @@
             </tr>
           </table>
         </div>
-        <table
-          class="usa-table svelte-1an8xyy"
-          border="1"
-          style="border-collapse: collapse"
-        >
-          <thead class="svelte-1an8xyy">
-            <tr class="svelte-1an8xyy">
-              <th class="svelte-1an8xyy">Criteria</th>
-              <th class="svelte-1an8xyy">Conformance Level</th>
-              <th class="svelte-1an8xyy">Remarks and Explanations</th>
+
+        <table class="usa-table">
+          <thead>
+            <tr>
+              <th>Criteria</th>
+              <th>Conformance Level</th>
+              <th>Remarks and Explanations</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="result-row svelte-cn2gpq" id="non-text-content-download">
-              <td class="svelte-cn2gpq">
+            <tr id="1.1.1">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#non-text-content"
                   target="_blank"
-                  >1.1.1 Non-text Content<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.1.1 Non-text Content<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -567,8 +442,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -615,22 +490,21 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="audio-only-and-video-only-prerecorded-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.2.1">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded"
                   target="_blank"
-                  >1.2.1 Audio-only and Video-only (Prerecorded)<span
-                    class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.2.1 Audio-only and Video-only (Prerecorded)<span
+                    class="usa-sr-only"
+                  >
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -657,8 +531,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -680,21 +554,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="captions-prerecorded-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.2.2">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#captions-prerecorded"
                   target="_blank"
-                  >1.2.2 Captions (Prerecorded)<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.2.2 Captions (Prerecorded)<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -721,8 +593,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -746,22 +618,20 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="audio-description-or-media-alternative-prerecorded-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.2.3">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#audio-description-or-media-alternative-prerecorded"
                   target="_blank"
-                  >1.2.3 Audio Description or Media Alternative
-                  (Prerecorded)<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.2.3 Audio Description or Media Alternative
+                  (Prerecorded)<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -788,8 +658,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -812,21 +682,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="info-and-relationships-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.3.1">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#info-and-relationships"
                   target="_blank"
-                  >1.3.1 Info and Relationships<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.3.1 Info and Relationships<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -853,8 +721,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -899,21 +767,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="meaningful-sequence-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.3.2">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#meaningful-sequence"
                   target="_blank"
-                  >1.3.2 Meaningful Sequence<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.3.2 Meaningful Sequence<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -940,8 +806,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -964,21 +830,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="sensory-characteristics-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.3.3">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#sensory-characteristics"
                   target="_blank"
-                  >1.3.3 Sensory Characteristics<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.3.3 Sensory Characteristics<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1005,8 +869,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1028,18 +892,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="use-of-color-download">
-              <td class="svelte-cn2gpq">
+            <tr id="1.4.1">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#use-of-color"
                   target="_blank"
-                  >1.4.1 Use of Color<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.4.1 Use of Color<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1066,8 +931,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1107,18 +972,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="audio-control-download">
-              <td class="svelte-cn2gpq">
+            <tr id="1.4.2">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#audio-control"
                   target="_blank"
-                  >1.4.2 Audio Control<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.4.2 Audio Control<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1170,16 +1036,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="keyboard-download">
-              <td class="svelte-cn2gpq">
-                <a href="https://www.w3.org/TR/WCAG21/#keyboard" target="_blank"
-                  >2.1.1 Keyboard<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
+            <tr id="2.1.1">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#keyboard"
+                  target="_blank"
                 >
+                  2.1.1 Keyboard<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1206,8 +1075,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1245,18 +1114,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="no-keyboard-trap-download">
-              <td class="svelte-cn2gpq">
+            <tr id="2.1.2">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#no-keyboard-trap"
                   target="_blank"
-                  >2.1.2 No Keyboard Trap<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.1.2 No Keyboard Trap<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1283,8 +1153,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1316,21 +1186,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="character-key-shortcuts-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="2.1.4">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#character-key-shortcuts"
                   target="_blank"
-                  >2.1.4 Character Key Shortcuts<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.1.4 Character Key Shortcuts<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1357,8 +1225,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1374,21 +1242,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="timing-adjustable-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="2.2.1">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#timing-adjustable"
                   target="_blank"
-                  >2.2.1 Timing Adjustable<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.2.1 Timing Adjustable<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1415,8 +1281,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1432,18 +1298,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="pause-stop-hide-download">
-              <td class="svelte-cn2gpq">
+            <tr id="2.2.2">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#pause-stop-hide"
                   target="_blank"
-                  >2.2.2 Pause, Stop, Hide<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.2.2 Pause, Stop, Hide<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1470,8 +1337,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1487,22 +1354,21 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="three-flashes-or-below-threshold-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="2.3.1">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#three-flashes-or-below-threshold"
                   target="_blank"
-                  >2.3.1 Three Flashes or Below Threshold<span
-                    class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.3.1 Three Flashes or Below Threshold<span
+                    class="usa-sr-only"
+                  >
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1529,8 +1395,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1546,18 +1412,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="bypass-blocks-download">
-              <td class="svelte-cn2gpq">
+            <tr id="2.4.1">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#bypass-blocks"
                   target="_blank"
-                  >2.4.1 Bypass Blocks<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.4.1 Bypass Blocks<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1584,8 +1451,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1601,18 +1468,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="page-titled-download">
-              <td class="svelte-cn2gpq">
+            <tr id="2.4.2">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#page-titled"
                   target="_blank"
-                  >2.4.2 Page Titled<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.4.2 Page Titled<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1639,8 +1507,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1673,18 +1541,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="focus-order-download">
-              <td class="svelte-cn2gpq">
+            <tr id="2.4.3">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#focus-order"
                   target="_blank"
-                  >2.4.3 Focus Order<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.4.3 Focus Order<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1711,8 +1580,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1750,21 +1619,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="link-purpose-in-context-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="2.4.4">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context"
                   target="_blank"
-                  >2.4.4 Link Purpose (In Context)<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.4.4 Link Purpose (In Context)<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1791,8 +1658,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1828,18 +1695,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="pointer-gestures-download">
-              <td class="svelte-cn2gpq">
+            <tr id="2.5.1">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#pointer-gestures"
                   target="_blank"
-                  >2.5.1 Pointer Gestures<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.5.1 Pointer Gestures<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1866,8 +1734,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1883,21 +1751,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="pointer-cancellation-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="2.5.2">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#pointer-cancellation"
                   target="_blank"
-                  >2.5.2 Pointer Cancellation<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.5.2 Pointer Cancellation<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1924,8 +1790,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1961,18 +1827,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="label-in-name-download">
-              <td class="svelte-cn2gpq">
+            <tr id="2.5.3">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#label-in-name"
                   target="_blank"
-                  >2.5.3 Label in Name<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.5.3 Label in Name<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -1999,8 +1866,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2016,18 +1883,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="motion-actuation-download">
-              <td class="svelte-cn2gpq">
+            <tr id="2.5.4">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#motion-actuation"
                   target="_blank"
-                  >2.5.4 Motion Actuation<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.5.4 Motion Actuation<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2054,8 +1922,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2071,18 +1939,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="language-of-page-download">
-              <td class="svelte-cn2gpq">
+            <tr id="3.1.1">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#language-of-page"
                   target="_blank"
-                  >3.1.1 Language of Page<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  3.1.1 Language of Page<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2109,8 +1978,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2126,16 +1995,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="on-focus-download">
-              <td class="svelte-cn2gpq">
-                <a href="https://www.w3.org/TR/WCAG21/#on-focus" target="_blank"
-                  >3.2.1 On Focus<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
+            <tr id="3.2.1">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#on-focus"
+                  target="_blank"
                 >
+                  3.2.1 On Focus<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2162,8 +2034,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2185,16 +2057,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="on-input-download">
-              <td class="svelte-cn2gpq">
-                <a href="https://www.w3.org/TR/WCAG21/#on-input" target="_blank"
-                  >3.2.2 On Input<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
+            <tr id="3.2.2">
+              <td>
+                <a
+                  href="https://www.w3.org/TR/WCAG21/#on-input"
+                  target="_blank"
                 >
+                  3.2.2 On Input<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2221,8 +2096,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2244,21 +2119,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="error-identification-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="3.3.1">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#error-identification"
                   target="_blank"
-                  >3.3.1 Error Identification<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  3.3.1 Error Identification<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2285,8 +2158,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2322,21 +2195,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="labels-or-instructions-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="3.3.2">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#labels-or-instructions"
                   target="_blank"
-                  >3.3.2 Labels or Instructions<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  3.3.2 Labels or Instructions<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2363,8 +2234,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2402,16 +2273,16 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="parsing-download">
-              <td class="svelte-cn2gpq">
-                <a href="https://www.w3.org/TR/WCAG21/#parsing" target="_blank"
-                  >4.1.1 Parsing<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
-                >
+            <tr id="4.1.1">
+              <td>
+                <a href="https://www.w3.org/TR/WCAG21/#parsing" target="_blank">
+                  4.1.1 Parsing<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2438,8 +2309,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2471,18 +2342,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="name-role-value-download">
-              <td class="svelte-cn2gpq">
+            <tr id="4.1.2">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#name-role-value"
                   target="_blank"
-                  >4.1.2 Name, Role, Value<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  4.1.2 Name, Role, Value<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2509,8 +2381,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2547,24 +2419,21 @@
             </tr>
           </tbody>
         </table>
-        <h3 id="success_criteria_level_aa-download" class="svelte-1y7sq6j">
+
+        <h3 id="success_criteria_level_aa">
           Table 2: Success Criteria, Level AA
-          <a
-            href="#success_criteria_level_aa-download"
-            class="header-anchor svelte-1y7sq6j"
-            ><span class="anchor-icon" aria-hidden="true"
-              ><svg
-                focusable="false"
-                aria-hidden="true"
-                class="icon-link svelte-1y7sq6j"
-              >
+          <a href="#success_criteria_level_aa" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
                 <path
                   d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                ></path></svg
-            ></span>
-            <span class="visuallyhidden">Anchor link</span></a
-          >
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
         </h3>
+
         <div id="success_criteria_level_aa-summary">
           <table class="usa-table">
             <caption>
@@ -2610,31 +2479,29 @@
             </tr>
           </table>
         </div>
-        <table
-          class="usa-table svelte-1an8xyy"
-          border="1"
-          style="border-collapse: collapse"
-        >
-          <thead class="svelte-1an8xyy">
-            <tr class="svelte-1an8xyy">
-              <th class="svelte-1an8xyy">Criteria</th>
-              <th class="svelte-1an8xyy">Conformance Level</th>
-              <th class="svelte-1an8xyy">Remarks and Explanations</th>
+
+        <table class="usa-table">
+          <thead>
+            <tr>
+              <th>Criteria</th>
+              <th>Conformance Level</th>
+              <th>Remarks and Explanations</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="result-row svelte-cn2gpq" id="captions-live-download">
-              <td class="svelte-cn2gpq">
+            <tr id="1.2.4">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#captions-live"
                   target="_blank"
-                  >1.2.4 Captions (Live)<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.2.4 Captions (Live)<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2661,8 +2528,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2678,22 +2545,21 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="audio-description-prerecorded-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.2.5">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#audio-description-prerecorded"
                   target="_blank"
-                  >1.2.5 Audio Description (Prerecorded)<span
-                    class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.2.5 Audio Description (Prerecorded)<span
+                    class="usa-sr-only"
+                  >
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2720,8 +2586,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2744,15 +2610,16 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="orientation-download">
-              <td class="svelte-cn2gpq">
+            <tr id="1.3.4">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#orientation"
                   target="_blank"
-                  >1.3.4 Orientation<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.3.4 Orientation<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
               <td>
                 <ul class="component-level-count-4">
@@ -2799,18 +2666,16 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="identify-input-purpose-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.3.5">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#identify-input-purpose"
                   target="_blank"
-                  >1.3.5 Identify Input Purpose<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.3.5 Identify Input Purpose<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
               <td>
                 <ul class="component-level-count-4">
@@ -2857,21 +2722,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="visual-audio-contrast-contrast-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.4.3">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#visual-audio-contrast-contrast"
                   target="_blank"
-                  >1.4.3 Contrast (Minimum)<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.4.3 Contrast (Minimum)<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2898,8 +2761,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2935,21 +2798,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="visual-audio-contrast-scale-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.4.4">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#visual-audio-contrast-scale"
                   target="_blank"
-                  >1.4.4 Resize text<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.4.4 Resize text<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -2976,8 +2837,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3008,21 +2869,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="visual-audio-contrast-text-presentation-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.4.5">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#visual-audio-contrast-text-presentation"
                   target="_blank"
-                  >1.4.5 Images of Text<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.4.5 Images of Text<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3049,8 +2908,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3070,16 +2929,16 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="reflow-download">
-              <td class="svelte-cn2gpq">
-                <a href="https://www.w3.org/TR/WCAG21/#reflow" target="_blank"
-                  >1.4.10 Reflow<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
-                >
+            <tr id="1.4.10">
+              <td>
+                <a href="https://www.w3.org/TR/WCAG21/#reflow" target="_blank">
+                  1.4.10 Reflow<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3106,8 +2965,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3143,21 +3002,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="non-text-contrast-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.4.11">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#non-text-contrast"
                   target="_blank"
-                  >1.4.11 Non-text Contrast<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.4.11 Non-text Contrast<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3184,8 +3041,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3223,18 +3080,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="text-spacing-download">
-              <td class="svelte-cn2gpq">
+            <tr id="1.4.12">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#text-spacing"
                   target="_blank"
-                  >1.4.12 Text Spacing<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.4.12 Text Spacing<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3261,8 +3119,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3305,21 +3163,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="content-on-hover-or-focus-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="1.4.13">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus"
                   target="_blank"
-                  >1.4.13 Content on Hover or Focus<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  1.4.13 Content on Hover or Focus<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3346,8 +3202,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3363,18 +3219,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="multiple-ways-download">
-              <td class="svelte-cn2gpq">
+            <tr id="2.4.5">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#multiple-ways"
                   target="_blank"
-                  >2.4.5 Multiple Ways<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.4.5 Multiple Ways<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3401,8 +3258,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3424,21 +3281,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="headings-and-labels-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="2.4.6">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#headings-and-labels"
                   target="_blank"
-                  >2.4.6 Headings and Labels<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.4.6 Headings and Labels<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3465,8 +3320,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3501,18 +3356,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="focus-visible-download">
-              <td class="svelte-cn2gpq">
+            <tr id="2.4.7">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#focus-visible"
                   target="_blank"
-                  >2.4.7 Focus Visible<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  2.4.7 Focus Visible<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3539,8 +3395,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3576,21 +3432,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="language-of-parts-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="3.1.2">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#language-of-parts"
                   target="_blank"
-                  >3.1.2 Language of Parts<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  3.1.2 Language of Parts<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3617,8 +3471,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3658,18 +3512,16 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="consistent-navigation-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="3.2.3">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#consistent-navigation"
                   target="_blank"
-                  >3.2.3 Consistent Navigation<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  3.2.3 Consistent Navigation<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
               <td>
                 <ul class="component-level-count-4">
@@ -3735,21 +3587,19 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="consistent-identification-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="3.2.4">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#consistent-identification"
                   target="_blank"
-                  >3.2.4 Consistent Identification<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  3.2.4 Consistent Identification<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-3 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-3">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3770,8 +3620,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-3 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-3">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3793,18 +3643,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="error-suggestion-download">
-              <td class="svelte-cn2gpq">
+            <tr id="3.3.3">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#error-suggestion"
                   target="_blank"
-                  >3.3.3 Error Suggestion<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  3.3.3 Error Suggestion<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3831,8 +3682,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3854,22 +3705,21 @@
                 </ul>
               </td>
             </tr>
-            <tr
-              class="result-row svelte-cn2gpq"
-              id="error-prevention-legal-financial-data-download"
-            >
-              <td class="svelte-cn2gpq">
+            <tr id="3.3.4">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#error-prevention-legal-financial-data"
                   target="_blank"
-                  >3.3.4 Error Prevention (Legal, Financial, Data)<span
-                    class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  3.3.4 Error Prevention (Legal, Financial, Data)<span
+                    class="usa-sr-only"
+                  >
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3896,8 +3746,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3916,18 +3766,19 @@
                 </ul>
               </td>
             </tr>
-            <tr class="result-row svelte-cn2gpq" id="status-messages-download">
-              <td class="svelte-cn2gpq">
+            <tr id="4.1.3">
+              <td>
                 <a
                   href="https://www.w3.org/TR/WCAG21/#status-messages"
                   target="_blank"
-                  >4.1.3 Status Messages<span class="visuallyhidden"
-                    >(opens in a new window or tab)</span
-                  ></a
                 >
+                  4.1.3 Status Messages<span class="usa-sr-only">
+                    (opens in a new window or tab)</span
+                  >
+                </a>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -3954,8 +3805,8 @@
                   </li>
                 </ul>
               </td>
-              <td class="svelte-cn2gpq">
-                <ul class="component-level-count-4 svelte-cn2gpq">
+              <td>
+                <ul class="component-level-count-4">
                   <li>
                     <span class="component-level-label"
                       ><strong>Web</strong>:
@@ -4017,21 +3868,16 @@
 
         <h2 id="legal-disclaimer">
           Legal Disclaimer
-          <a
-            href="#legal-disclaimer-download"
-            class="header-anchor svelte-1y7sq6j"
-            ><span class="anchor-icon" aria-hidden="true"
-              ><svg
-                focusable="false"
-                aria-hidden="true"
-                class="icon-link svelte-1y7sq6j"
-              >
+          <a href="#legal-disclaimer" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
                 <path
                   d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                ></path></svg
-            ></span>
-            <span class="visuallyhidden">Anchor link</span></a
-          >
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
         </h2>
         <p>
           The information herein is provided in good faith based on the analysis
@@ -4040,65 +3886,53 @@
           accessibility errors or conformance claim errors for re-evaluation and
           correction, if necessary.
         </p>
-        <h2 id="repository-download" class="svelte-1y7sq6j">
+
+        <h2 id="repository">
           Repository
-          <a href="#repository-download" class="header-anchor svelte-1y7sq6j"
-            ><span class="anchor-icon" aria-hidden="true"
-              ><svg
-                focusable="false"
-                aria-hidden="true"
-                class="icon-link svelte-1y7sq6j"
-              >
+          <a href="#repository" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
                 <path
                   d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                ></path></svg
-            ></span>
-            <span class="visuallyhidden">Anchor link</span></a
-          >
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
         </h2>
         <a
           href="https://github.com/CivicActions/openacr/blob/main/openacr/drupal-10-16.yaml"
           >https://github.com/CivicActions/openacr/blob/main/openacr/drupal-10-16.yaml</a
         >
-        <h2 id="feedback-download" class="svelte-1y7sq6j">
+        <h2 id="feedback">
           Feedback
-          <a href="#feedback-download" class="header-anchor svelte-1y7sq6j"
-            ><span class="anchor-icon" aria-hidden="true"
-              ><svg
-                focusable="false"
-                aria-hidden="true"
-                class="icon-link svelte-1y7sq6j"
-              >
+          <a href="#feedback" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
                 <path
                   d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                ></path></svg
-            ></span>
-            <span class="visuallyhidden">Anchor link</span></a
-          >
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
         </h2>
-        <a href="https://www.drupal.org/project/issues/drupal" target="_blank"
-          >https://www.drupal.org/project/issues/drupal<span
-            class="visuallyhidden"
-            >(opens in a new window or tab)</span
-          ></a
+        <a href="https://www.drupal.org/project/issues/drupal"
+          >https://www.drupal.org/project/issues/drupal</a
         >
-        <h2 id="related-openacrs-download" class="svelte-1y7sq6j">
+
+        <h2 id="related-openacrs">
           Related OpenACRs
-          <a
-            href="#related-openacrs-download"
-            class="header-anchor svelte-1y7sq6j"
-            ><span class="anchor-icon" aria-hidden="true"
-              ><svg
-                focusable="false"
-                aria-hidden="true"
-                class="icon-link svelte-1y7sq6j"
-              >
+          <a href="#related-openacrs" class="header-anchor">
+            <span class="anchor-icon" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true" class="icon-link">
                 <path
                   d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
-                ></path></svg
-            ></span>
-            <span class="visuallyhidden">Anchor link</span></a
-          >
+                />
+              </svg>
+            </span>
+            <span class="visuallyhidden">Anchor link</span>
+          </a>
         </h2>
         <a href="https://www.drupal.org/project/issues/drupal"
           >https://www.drupal.org/project/issues/drupal</a
@@ -4124,20 +3958,22 @@
     </main>
     <footer class="usa-footer usa-footer usa-footer--slim">
       <div class="usa-footer__return-to-top">
-        <div class="grid-container"><a href="#">Return to top</a></div>
+        <div class="grid-container">
+          <a href="#">Return to top</a>
+        </div>
       </div>
       <div class="usa-footer__secondary-section">
         <div class="grid-container">
           <div class="grid-row grid-gap">
             <div class="grid-col">
               <a href="https://github.com/GSA/openacr" target="_blank"
-                >OpenACR<span class="visuallyhidden">
+                >OpenACR<span class="usa-sr-only">
                   (opens in a new window or tab)</span
                 ></a
               >
               is a format maintained by the
               <a href="https://gsa.gov/" target="_blank"
-                >GSA<span class="visuallyhidden">
+                >GSA<span class="usa-sr-only">
                   (opens in a new window or tab)</span
                 ></a
               >. The content is the responsibility of the author.
@@ -4148,7 +3984,7 @@
                 href="https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html"
                 target="_blank"
                 >GNU General Public License v2.0 or later<span
-                  class="visuallyhidden"
+                  class="usa-sr-only"
                 >
                   (opens in a new window or tab)</span
                 ></a

@@ -178,47 +178,87 @@ export function createOutput(
   });
 
   Handlebars.registerHelper("progressPerChapter", function (criterias) {
-    let supportCount = 0;
-    let partiallySupportCount = 0;
-    let doesNotSupportCount = 0;
-    let notApplicableCount = 0;
+    let tableHeader = "";
+    const tableCounts: any[] = [];
+    if (catalogData.components) {
+      for (const component of catalogData.components) {
+        if (component.label != "") {
+          if (templateType === "html") {
+            tableHeader += `<th>${component.label}</th>`;
+          } else {
+            tableHeader += `| ${component.label}`;
+          }
+          tableCounts[component.id] = [];
+        }
+      }
+    }
     for (const criteria of criterias) {
       if (criteria.components) {
         for (const component of criteria.components) {
-          if (component.adherence && component.adherence.level === "supports") {
-            supportCount = supportCount + 1;
-          } else if (
-            component.adherence &&
-            component.adherence.level === "partially-supports"
-          ) {
-            partiallySupportCount = partiallySupportCount + 1;
-          } else if (
-            component.adherence &&
-            component.adherence.level === "does-not-support"
-          ) {
-            doesNotSupportCount = doesNotSupportCount + 1;
-          } else if (
-            component.adherence &&
-            component.adherence.level === "not-applicable"
-          ) {
-            notApplicableCount = notApplicableCount + 1;
+          if (component.adherence) {
+            if (tableCounts[component.name][component.adherence.level]) {
+              tableCounts[component.name][component.adherence.level] += 1;
+            } else {
+              tableCounts[component.name][component.adherence.level] = 1;
+            }
           }
         }
       }
     }
+    let tableBody = "";
+    for (const row of tableCounts) {
+      let tableRow = "";
+      for (const col of row) {
+        if (templateType === "html") {
+          tableRow += `<td>${tableCounts[row][col]}</td>`;
+        } else {
+          tableRow += `| ${tableCounts[row][col]}`;
+        }
+      }
+    }
+    if (catalogData.terms) {
+      for (const term of catalogData.terms) {
+        if (term.label != "" && term.id != "not-evaluated") {
+          let tableRow = "";
+          if (catalogData.components) {
+            for (const component of catalogData.components) {
+              if (component.label != "") {
+                if (templateType === "html") {
+                  if (tableCounts[component.id][term.id]) {
+                    tableRow += `<td>${
+                      tableCounts[component.id][term.id]
+                    }</td>`;
+                  } else {
+                    tableRow += "<td>0</td>";
+                  }
+                } else {
+                  if (tableCounts[component.id][term.id]) {
+                    tableRow += `| ${tableCounts[component.id][term.id]}`;
+                  } else {
+                    tableRow += "| 0";
+                  }
+                }
+              }
+            }
+          }
 
+          if (templateType === "html") {
+            tableBody += `<tr><td>${term.label}</td>${tableRow}</tr>`;
+          } else {
+            tableBody += `| ${term.label} ${tableRow} |
+`;
+          }
+        }
+      }
+    }
     if (templateType === "html") {
       return new Handlebars.SafeString(
-        `<li>${supportCount} supported</li>
-        <li>${partiallySupportCount} partially supported</li>
-        <li>${doesNotSupportCount} not supported</li>
-        <li>${notApplicableCount} not applicable</li>`
+        `<thead><tr><th>Conformance Level</th>${tableHeader}</tr></thead>${tableBody}`
       );
     } else {
-      return `- ${supportCount} supported
-- ${partiallySupportCount} partially supported
-- ${doesNotSupportCount} not supported
-- ${notApplicableCount} not applicable`;
+      return `| Conformance Level ${tableHeader} |
+| --- | --- | --- |
+${tableBody}`;
     }
   });
 

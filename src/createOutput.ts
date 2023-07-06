@@ -182,14 +182,14 @@ export function createOutput(
     const tableCounts: any[] = [];
     if (catalogData.components) {
       for (const component of catalogData.components) {
-        if (component.label != "") {
-          if (templateType === "html") {
-            tableHeader += `<th>${component.label}</th>`;
-          } else {
-            tableHeader += `| ${component.label}`;
-          }
-          tableCounts[component.id] = [];
+        if (templateType === "html") {
+          tableHeader += `<th>${
+            component.label != "" ? component.label : "N/A"
+          }</th>`;
+        } else {
+          tableHeader += `| ${component.label != "" ? component.label : "N/A"}`;
         }
+        tableCounts[component.id] = [];
       }
     }
     for (const criteria of criterias) {
@@ -222,21 +222,23 @@ export function createOutput(
           let tableRow = "";
           if (catalogData.components) {
             for (const component of catalogData.components) {
-              if (component.label != "") {
-                if (templateType === "html") {
-                  if (tableCounts[component.id][term.id]) {
-                    tableRow += `<td>${
-                      tableCounts[component.id][term.id]
-                    }</td>`;
-                  } else {
-                    tableRow += "<td>0</td>";
-                  }
+              if (templateType === "html") {
+                if (
+                  tableCounts[component.id] &&
+                  tableCounts[component.id][term.id]
+                ) {
+                  tableRow += `<td>${tableCounts[component.id][term.id]}</td>`;
                 } else {
-                  if (tableCounts[component.id][term.id]) {
-                    tableRow += `| ${tableCounts[component.id][term.id]}`;
-                  } else {
-                    tableRow += "| 0";
-                  }
+                  tableRow += "<td>0</td>";
+                }
+              } else {
+                if (
+                  tableCounts[component.id] &&
+                  tableCounts[component.id][term.id]
+                ) {
+                  tableRow += `| ${tableCounts[component.id][term.id]}`;
+                } else {
+                  tableRow += "| 0";
                 }
               }
             }

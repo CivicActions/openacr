@@ -63,13 +63,31 @@ export function createOutput(
         if (component.id === componentId) {
           if (component.label != "") {
             return component.label;
+          } else {
+            return "Any";
           }
         }
       }
     }
   };
 
-  Handlebars.registerHelper("catalogComponentLabel", getCatalogComponentLabel);
+  Handlebars.registerHelper("catalogComponentLabel", function (componentId) {
+    if (catalogData.components) {
+      for (const component of catalogData.components) {
+        if (component.id === componentId) {
+          if (component.label != "") {
+            if (templateType === "html") {
+              return new Handlebars.SafeString(
+                `<strong>${component.label}</strong>: `
+              );
+            } else {
+              return `**${component.label}**: `;
+            }
+          }
+        }
+      }
+    }
+  });
 
   const getLevelLabel = (level: string): any => {
     if (catalogData.terms) {
@@ -177,13 +195,15 @@ export function createOutput(
 
   Handlebars.registerHelper("progressPerChapter", function (criterias) {
     let tableHeader = "";
+    let tableHeaderMarkdownunderline = "";
     const tableCounts: any[] = [];
     if (criterias[0].components) {
       for (const component of criterias[0].components) {
         if (templateType === "html") {
           tableHeader += `<th>${getCatalogComponentLabel(component.name)}</th>`;
         } else {
-          tableHeader += `| ${getCatalogComponentLabel(component.name)}`;
+          tableHeader += ` | ${getCatalogComponentLabel(component.name)}`;
+          tableHeaderMarkdownunderline += " | ---";
         }
         tableCounts[component.name] = [];
       }
@@ -229,9 +249,9 @@ export function createOutput(
                   tableCounts[component.name] &&
                   tableCounts[component.name][term.id]
                 ) {
-                  tableBody += `| ${tableCounts[component.name][term.id]}`;
+                  tableBody += ` | ${tableCounts[component.name][term.id]}`;
                 } else {
-                  tableBody += "| 0";
+                  tableBody += " | 0";
                 }
               }
             }
@@ -240,7 +260,7 @@ export function createOutput(
           if (templateType === "html") {
             tableBody += "</tr>";
           } else {
-            tableBody += `|
+            tableBody += ` |
 `;
           }
         }
@@ -251,8 +271,8 @@ export function createOutput(
         `<thead><tr><th>Conformance Level</th>${tableHeader}</tr></thead>${tableBody}`
       );
     } else {
-      return `| Conformance Level ${tableHeader} |
-| --- | --- | --- |
+      return `| Conformance Level${tableHeader} |
+| ---${tableHeaderMarkdownunderline} |
 ${tableBody}`;
     }
   });

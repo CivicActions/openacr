@@ -167,7 +167,7 @@
                             <ul class="component-level-count-{{levelCount data-criteria.components}}">
                               {{#each data-criteria.components as |data-components|}}
                                 {{#if data-components.adherence.level}}
-                                  <li><span class="component-level-label"><strong>{{catalogComponentLabel data-components.name}}</strong>:</span><p>{{levelLabel data-components.adherence.level}}</p></li>
+                                  <li><span class="component-level-label">{{catalogComponentLabel data-components.name}}</span><p>{{levelLabel data-components.adherence.level}}</p></li>
                                 {{/if}}
                               {{/each}}
                             </ul>
@@ -178,7 +178,7 @@
                             <ul class="component-level-count-{{levelCount data-criteria.components}}">
                               {{#each data-criteria.components as |data-components|}}
                                 {{#if data-components.adherence.notes}}
-                                  <li><span class="component-level-label"><strong>{{catalogComponentLabel data-components.name}}</strong>:</span>{{sanitizeMarkdown data-components.adherence.notes}}</li>
+                                  <li><span class="component-level-label">{{catalogComponentLabel data-components.name}}</span>{{sanitizeMarkdown data-components.adherence.notes}}</li>
                                 {{/if}}
                               {{/each}}
                             </ul>

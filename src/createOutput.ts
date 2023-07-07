@@ -57,25 +57,21 @@ export function createOutput(
     }
   );
 
-  Handlebars.registerHelper("catalogComponentLabel", function (componentId) {
+  const getCatalogComponentLabel = (componentId: string): any => {
     if (catalogData.components) {
       for (const component of catalogData.components) {
         if (component.id === componentId) {
           if (component.label != "") {
-            if (templateType === "html") {
-              return new Handlebars.SafeString(
-                `<strong>${component.label}</strong>: `
-              );
-            } else {
-              return `**${component.label}**: `;
-            }
+            return component.label;
           }
         }
       }
     }
-  });
+  };
 
-  Handlebars.registerHelper("levelLabel", function (level) {
+  Handlebars.registerHelper("catalogComponentLabel", getCatalogComponentLabel);
+
+  const getLevelLabel = (level: string): any => {
     if (catalogData.terms) {
       for (const terms of catalogData.terms) {
         if (terms.id === level) {
@@ -85,7 +81,9 @@ export function createOutput(
     }
     // If a level is provided but has no matching terms, provide a default.
     return "Not Applicable";
-  });
+  };
+
+  Handlebars.registerHelper("levelLabel", getLevelLabel);
 
   Handlebars.registerHelper("standardsIncluded", function (standardChapters) {
     const result = [];
@@ -182,11 +180,10 @@ export function createOutput(
     const tableCounts: any[] = [];
     if (criterias[0].components) {
       for (const component of criterias[0].components) {
-        const label = component.name;
         if (templateType === "html") {
-          tableHeader += `<th>${label}</th>`;
+          tableHeader += `<th>${getCatalogComponentLabel(component.name)}</th>`;
         } else {
-          tableHeader += `| ${label}`;
+          tableHeader += `| ${getCatalogComponentLabel(component.name)}`;
         }
         tableCounts[component.name] = [];
       }
@@ -209,9 +206,9 @@ export function createOutput(
       for (const term of catalogData.terms) {
         if (term.label != "" && term.id != "not-evaluated") {
           if (templateType === "html") {
-            tableBody += `<tr><td>${term.id}</td>`;
+            tableBody += `<tr><td>${getLevelLabel(term.id)}</td>`;
           } else {
-            tableBody += `| ${term.id}`;
+            tableBody += `| ${getLevelLabel(term.id)}`;
           }
 
           if (criterias[0].components) {

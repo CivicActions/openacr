@@ -180,16 +180,15 @@ export function createOutput(
   Handlebars.registerHelper("progressPerChapter", function (criterias) {
     let tableHeader = "";
     const tableCounts: any[] = [];
-    if (catalogData.components) {
-      for (const component of catalogData.components) {
+    if (criterias[0].components) {
+      for (const component of criterias[0].components) {
+        const label = component.name;
         if (templateType === "html") {
-          tableHeader += `<th>${
-            component.label != "" ? component.label : "N/A"
-          }</th>`;
+          tableHeader += `<th>${label}</th>`;
         } else {
-          tableHeader += `| ${component.label != "" ? component.label : "N/A"}`;
+          tableHeader += `| ${label}`;
         }
-        tableCounts[component.id] = [];
+        tableCounts[component.name] = [];
       }
     }
     for (const criteria of criterias) {
@@ -206,48 +205,45 @@ export function createOutput(
       }
     }
     let tableBody = "";
-    for (const row of tableCounts) {
-      let tableRow = "";
-      for (const col of row) {
-        if (templateType === "html") {
-          tableRow += `<td>${tableCounts[row][col]}</td>`;
-        } else {
-          tableRow += `| ${tableCounts[row][col]}`;
-        }
-      }
-    }
     if (catalogData.terms) {
       for (const term of catalogData.terms) {
         if (term.label != "" && term.id != "not-evaluated") {
-          let tableRow = "";
-          if (catalogData.components) {
-            for (const component of catalogData.components) {
+          if (templateType === "html") {
+            tableBody += `<tr><td>${term.id}</td>`;
+          } else {
+            tableBody += `| ${term.id}`;
+          }
+
+          if (criterias[0].components) {
+            for (const component of criterias[0].components) {
               if (templateType === "html") {
                 if (
-                  tableCounts[component.id] &&
-                  tableCounts[component.id][term.id]
+                  tableCounts[component.name] &&
+                  tableCounts[component.name][term.id]
                 ) {
-                  tableRow += `<td>${tableCounts[component.id][term.id]}</td>`;
+                  tableBody += `<td>${
+                    tableCounts[component.name][term.id]
+                  }</td>`;
                 } else {
-                  tableRow += "<td>0</td>";
+                  tableBody += "<td>0</td>";
                 }
               } else {
                 if (
-                  tableCounts[component.id] &&
-                  tableCounts[component.id][term.id]
+                  tableCounts[component.name] &&
+                  tableCounts[component.name][term.id]
                 ) {
-                  tableRow += `| ${tableCounts[component.id][term.id]}`;
+                  tableBody += `| ${tableCounts[component.name][term.id]}`;
                 } else {
-                  tableRow += "| 0";
+                  tableBody += "| 0";
                 }
               }
             }
           }
 
           if (templateType === "html") {
-            tableBody += `<tr><td>${term.label}</td>${tableRow}</tr>`;
+            tableBody += "</tr>";
           } else {
-            tableBody += `| ${term.label} ${tableRow} |
+            tableBody += `|
 `;
           }
         }

@@ -98,12 +98,12 @@ Conformance to the 25 criteria listed below is distributed within each category 
 
 Conformance to the 13 criteria listed below is distributed within each category as follows:
 
-| Conformance Level  | Web | Electronic Documents | Software |
-| ------------------ | --- | -------------------- | -------- |
-| Supports           | 13  | 10                   | 0        |
-| Partially Supports | 0   | 0                    | 0        |
-| Does Not Support   | 0   | 0                    | 0        |
-| Not Applicable     | 0   | 3                    | 12       |
+| Conformance Level  | Web | Electronic Documents | Software | Authoring Tool |
+| ------------------ | --- | -------------------- | -------- | -------------- |
+| Supports           | 13  | 10                   | 0        | 8              |
+| Partially Supports | 0   | 0                    | 0        | 0              |
+| Does Not Support   | 0   | 0                    | 0        | 0              |
+| Not Applicable     | 0   | 3                    | 12       | 3              |
 
 | Criteria                                                                                                      | Conformance Level                                                                                                                                               | Remarks and Explanations |
 | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |

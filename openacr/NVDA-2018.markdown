@@ -121,12 +121,12 @@ Conformance to the 13 criteria listed below is distributed within each category 
 
 Conformance to the 23 criteria listed below is distributed within each category as follows:
 
-| Conformance Level  | Web |
-| ------------------ | --- |
-| Supports           | 14  |
-| Partially Supports | 7   |
-| Does Not Support   | 2   |
-| Not Applicable     | 0   |
+| Conformance Level  | Web | Software |
+| ------------------ | --- | -------- |
+| Supports           | 14  | 1        |
+| Partially Supports | 7   | 0        |
+| Does Not Support   | 2   | 0        |
+| Not Applicable     | 0   | 0        |
 
 | Criteria                                                                                                | Conformance Level                                                             | Remarks and Explanations                                                                                                                                                                                                                                                     |
 | ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

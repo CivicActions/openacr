@@ -195,14 +195,14 @@ export function createOutput(
 
   Handlebars.registerHelper("progressPerChapter", function (criterias) {
     let tableHeader = "";
-    let tableHeaderMarkdownunderline = "";
+    let tableHeaderMarkdownUnderline = "";
     const tableCounts: any[] = [];
     for (const component of criterias[0].components) {
       if (templateType === "html") {
         tableHeader += `<th>${getCatalogComponentLabel(component.name)}</th>`;
       } else {
         tableHeader += ` | ${getCatalogComponentLabel(component.name)}`;
-        tableHeaderMarkdownunderline += " | ---";
+        tableHeaderMarkdownUnderline += " | ---";
       }
       tableCounts[component.name] = [];
     }
@@ -211,6 +211,14 @@ export function createOutput(
         for (const component of criteria.components) {
           if (component.adherence) {
             if (tableCounts[component.name] === undefined) {
+              if (templateType === "html") {
+                tableHeader += `<th>${getCatalogComponentLabel(
+                  component.name
+                )}</th>`;
+              } else {
+                tableHeader += ` | ${getCatalogComponentLabel(component.name)}`;
+                tableHeaderMarkdownUnderline += " | ---";
+              }
               tableCounts[component.name] = [];
             }
 
@@ -232,22 +240,16 @@ export function createOutput(
           } else {
             tableBody += `| ${getLevelLabel(term.id)}`;
           }
-          for (const component of criterias[0].components) {
+          for (const component in tableCounts) {
             if (templateType === "html") {
-              if (
-                tableCounts[component.name] &&
-                tableCounts[component.name][term.id]
-              ) {
-                tableBody += `<td>${tableCounts[component.name][term.id]}</td>`;
+              if (tableCounts[component] && tableCounts[component][term.id]) {
+                tableBody += `<td>${tableCounts[component][term.id]}</td>`;
               } else {
                 tableBody += "<td>0</td>";
               }
             } else {
-              if (
-                tableCounts[component.name] &&
-                tableCounts[component.name][term.id]
-              ) {
-                tableBody += ` | ${tableCounts[component.name][term.id]}`;
+              if (tableCounts[component] && tableCounts[component][term.id]) {
+                tableBody += ` | ${tableCounts[component][term.id]}`;
               } else {
                 tableBody += " | 0";
               }
@@ -269,7 +271,7 @@ export function createOutput(
       );
     } else {
       return `| Conformance Level${tableHeader} |
-| ---${tableHeaderMarkdownunderline} |
+| ---${tableHeaderMarkdownUnderline} |
 ${tableBody}`;
     }
   });

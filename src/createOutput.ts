@@ -197,16 +197,14 @@ export function createOutput(
     let tableHeader = "";
     let tableHeaderMarkdownunderline = "";
     const tableCounts: any[] = [];
-    if (criterias[0].components) {
-      for (const component of criterias[0].components) {
-        if (templateType === "html") {
-          tableHeader += `<th>${getCatalogComponentLabel(component.name)}</th>`;
-        } else {
-          tableHeader += ` | ${getCatalogComponentLabel(component.name)}`;
-          tableHeaderMarkdownunderline += " | ---";
-        }
-        tableCounts[component.name] = [];
+    for (const component of criterias[0].components) {
+      if (templateType === "html") {
+        tableHeader += `<th>${getCatalogComponentLabel(component.name)}</th>`;
+      } else {
+        tableHeader += ` | ${getCatalogComponentLabel(component.name)}`;
+        tableHeaderMarkdownunderline += " | ---";
       }
+      tableCounts[component.name] = [];
     }
     for (const criteria of criterias) {
       if (criteria.components) {
@@ -230,29 +228,24 @@ export function createOutput(
           } else {
             tableBody += `| ${getLevelLabel(term.id)}`;
           }
-
-          if (criterias[0].components) {
-            for (const component of criterias[0].components) {
-              if (templateType === "html") {
-                if (
-                  tableCounts[component.name] &&
-                  tableCounts[component.name][term.id]
-                ) {
-                  tableBody += `<td>${
-                    tableCounts[component.name][term.id]
-                  }</td>`;
-                } else {
-                  tableBody += "<td>0</td>";
-                }
+          for (const component of criterias[0].components) {
+            if (templateType === "html") {
+              if (
+                tableCounts[component.name] &&
+                tableCounts[component.name][term.id]
+              ) {
+                tableBody += `<td>${tableCounts[component.name][term.id]}</td>`;
               } else {
-                if (
-                  tableCounts[component.name] &&
-                  tableCounts[component.name][term.id]
-                ) {
-                  tableBody += ` | ${tableCounts[component.name][term.id]}`;
-                } else {
-                  tableBody += " | 0";
-                }
+                tableBody += "<td>0</td>";
+              }
+            } else {
+              if (
+                tableCounts[component.name] &&
+                tableCounts[component.name][term.id]
+              ) {
+                tableBody += ` | ${tableCounts[component.name][term.id]}`;
+              } else {
+                tableBody += " | 0";
               }
             }
           }

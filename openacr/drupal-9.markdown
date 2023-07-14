@@ -190,7 +190,7 @@ Notes: Not applicable.
 
 Conformance to the 9 criteria listed below is distributed within each category as follows:
 
-| Conformance Level  | Any |
+| Conformance Level  | All |
 | ------------------ | --- |
 | Supports           | 5   |
 | Partially Supports | 0   |
@@ -223,7 +223,7 @@ Notes: Drupal is a web application and all support documentation is delivered th
 
 Conformance to the 5 criteria listed below is distributed within each category as follows:
 
-| Conformance Level  | Any |
+| Conformance Level  | All |
 | ------------------ | --- |
 | Supports           | 0   |
 | Partially Supports | 0   |

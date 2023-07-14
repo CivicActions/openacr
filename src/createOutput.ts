@@ -64,7 +64,7 @@ export function createOutput(
           if (component.label != "") {
             return component.label;
           } else {
-            return "Any";
+            return "All";
           }
         }
       }

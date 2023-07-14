@@ -210,6 +210,10 @@ export function createOutput(
       if (criteria.components) {
         for (const component of criteria.components) {
           if (component.adherence) {
+            if (tableCounts[component.name] === undefined) {
+              tableCounts[component.name] = [];
+            }
+
             if (tableCounts[component.name][component.adherence.level]) {
               tableCounts[component.name][component.adherence.level] += 1;
             } else {

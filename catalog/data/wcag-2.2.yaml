@@ -1,14 +1,16 @@
-title: VPAT® 2.4
+title: WCAG 2.2
 lang: en
-standards:
+standard:
   - id: wcag-2.2
-    label: Web Content Accessibility Guidelines 2.2
-    report_heading: WCAG 2.2 Report
+    label: "Web Content Accessibility Guidelines 2.2"
+    report_heading: "WCAG 2.2 Report"
     url: https://www.w3.org/TR/WCAG22/
     chapters:
-      - success_criteria_level_a
-      - success_criteria_level_aa
-      - success_criteria_level_aaa
+      [
+        success_criteria_level_a,
+        success_criteria_level_aa,
+        success_criteria_level_aaa,
+      ]
 chapters:
   - id: success_criteria_level_a
     label: "Table 1: Success Criteria, Level A"
@@ -223,7 +225,7 @@ chapters:
           - electronic-docs
           - software
           - authoring-tool
-     - id: 3.2.6
+      - id: 3.2.6
         handle: Consistent Help
         alt_id: consistent-help
         components:
@@ -453,7 +455,7 @@ chapters:
           - software
           - authoring-tool
       - id: 3.3.8
-        handle: Accessible Authentication (Minimum) 
+        handle: Accessible Authentication (Minimum)
         alt_id: accessible-authentication
         components:
           - web
@@ -461,7 +463,7 @@ chapters:
           - software
           - authoring-tool
       - id: 3.3.9
-        handle: Accessible Authentication (Enhanced) 
+        handle: Accessible Authentication (Enhanced)
         alt_id: accessible-authentication-enhanced
         components:
           - web
@@ -721,34 +723,3 @@ chapters:
           - electronic-docs
           - software
           - authoring-tool
-components:
-  - id: web
-    label: Web
-  - id: electronic-docs
-    label: Electronic Documents
-  - id: software
-    label: Software
-  - id: authoring-tool
-    label: Authoring Tool
-  - id: none
-    label: ""
-terms:
-  - id: supports
-    label: Supports
-    description: >-
-      The functionality of the product has at least one method that meets the
-      criterion without known defects or meets with equivalent facilitation.
-  - id: partially-supports
-    label: Partially Supports
-    description: Some functionality of the product does not meet the criterion.
-  - id: does-not-support
-    label: Does Not Support
-    description: The majority of product functionality does not meet the criterion.
-  - id: not-applicable
-    label: Not Applicable
-    description: The criterion is not relevant to the product.
-  - id: not-evaluated
-    label: Not Evaluated
-    description: >-
-      The product has not been evaluated against the criterion. This can be used
-      only in WCAG 2.x Level AAA.

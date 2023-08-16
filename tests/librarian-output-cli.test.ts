@@ -74,6 +74,24 @@ describe("Librarian test output", () => {
     });
   });
 
+  it("confirm WCAG22 example output is valid", () => {
+    const valid = spawn(cmd, options.concat("WCAG22"));
+    const chunks = [];
+
+    valid.stdout.on("data", (chunk) => {
+      chunks.push(chunk);
+    });
+
+    valid.stdout.on("end", () => {
+      const output = Buffer.concat(chunks).toString();
+
+      expect(output).to.equal(
+        "Warning: This will rebuild the following catalog: WCAG22.\n" +
+          "Successfully created catalog ./catalog/2.5-edition-wcag-2.2-en.yaml.\n"
+      );
+    });
+  });
+
   const other_catalogs = ["EU", "INT", "RANDOM"];
 
   for (const other_catalog of other_catalogs) {

@@ -50,6 +50,7 @@
     "generate-508-catalog": "npx ts-node src/librarian.ts -c 508",
     "generate-WCAG-catalog": "npx ts-node src/librarian.ts -c WCAG",
     "generate-WCAG21508-catalog": "npx ts-node src/librarian.ts -c WCAG21508",
+    "generate-WCAG22-catalog": "npx ts-node src/librarian.ts -c WCAG22",
     "a11y-test": "pa11y-ci openacr/*.html output/*.html tests/examples/*.html",
     "generate-license-report": "license-checker-rseidelsohn --relativeLicensePath --relativeModulePath > license/licenses.txt",
     "generate-drupal-10-html": "npx ts-node src/openacr.ts output -f openacr/drupal-10-16.yaml -c catalog/2.4-edition-wcag-2.1-en.yaml -o openacr/drupal-10-16.html",

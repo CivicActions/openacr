@@ -47,6 +47,9 @@ if (argv.catalog) {
   const wcag21 = yaml.load(
     fs.readFileSync("./catalog/data/wcag-2.1.yaml").toString()
   );
+  const wcag22 = yaml.load(
+    fs.readFileSync("./catalog/data/wcag-2.2.yaml").toString()
+  );
 
   let combined;
   let outputFile = "";
@@ -105,6 +108,23 @@ if (argv.catalog) {
       );
 
       outputFile = `./catalog/2.4-edition-${combined.standards[0].id}-${combined.standards[1].id}-${combined.lang}.yaml`;
+      break;
+
+    case "WCAG22":
+      console.log(
+        `Warning: This will rebuild the following catalog: ${catalog}.`
+      );
+
+      combined = createCatalog(
+        null,
+        wcag22,
+        components,
+        terms,
+        "VPAT® 2.5",
+        "en"
+      );
+
+      outputFile = `./catalog/2.5-edition-${combined.standards[0].id}-${combined.lang}.yaml`;
       break;
   }
 

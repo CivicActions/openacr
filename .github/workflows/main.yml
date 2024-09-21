@@ -21,7 +21,7 @@ jobs:
       - run: sed -i 's/{% render %}/render/g' openacr/uswds/README.md
       - run: sed -i 's/{% include %}/include/g' openacr/uswds/README.md
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.6.4
+        uses: JamesIves/github-pages-deploy-action@v4.6.4
         with:
           BRANCH: gh-pages
           FOLDER: openacr

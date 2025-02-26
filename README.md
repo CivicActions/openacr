@@ -40,6 +40,25 @@ ACRs should be built with version control in a repository like GitHub or Gitlab.
 
 We have built the HTML output so that vendors can later edit it to add style elements through CSS. We expect that vendors will want to customize the look/feel and include their branding. The main goal will be to provide a means to easily compare documents so that presentation doesn't get in the way.
 
+## Proposed Governance
+
+```mermaid
+graph TD;
+A["Legal System"]-->|Legislation| B["US Federal Government"];
+B-->|Bylaws| C["General Services Administration"];
+C-->D["Director of the Government-wide IT Accessibility Program"];
+D-->|Legal Contract| E["Government Contractor"];
+E-->F[Contractor Accessibility Lead];
+F-->|GOVERNANCE.md| G["Governance Documentation"];
+F-->|AUTHORS.txt| H["Code owners"];
+F-->|CONTRIBUTORS.txt| I["Contributors"];
+F-->|COC TEAM CHARTER| J["CoC Team"];
+J-->|<a href='https://github.com/GSA/open-source-policy/blob/master/CODE_OF_CONDUCT.md'>GSA OS CODE_OF_CONDUCT.md</a>| H;
+J-->|<a href='https://github.com/GSA/open-source-policy/blob/master/CODE_OF_CONDUCT.md'>GSA OS CODE_OF_CONDUCT.md</a>| I;
+J-->|<a href='https://github.com/GSA/open-source-policy/blob/master/CODE_OF_CONDUCT.md'>GSA OS CODE_OF_CONDUCT.md</a>| F;
+H-->|CONTRIBUTING.MD| I;
+```
+
 ## Documentation
 
 Our documentation currently includes a [short summary of the project and our goals](/docs/GSA-OpenACR-Public.md), a [short project roadmap](/docs/ROADMAP.md) and the [Command Line Documentation](/docs/CLI.md). If you want to experiment with this you will need to install this application on your computer.

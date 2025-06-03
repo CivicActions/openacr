@@ -1,4 +1,7 @@
 name: OpenACR Export
+permissions:
+  contents: read
+  pull-requests: write
 
 on:
   pull_request:

@@ -194,85 +194,47 @@ export function createOutput(
   });
 
   Handlebars.registerHelper("progressPerChapter", function (criterias) {
-    let tableHeader = "";
-    let tableHeaderMarkdownUnderline = "";
-    const tableCounts: any[] = [];
-    for (const component of criterias[0].components) {
-      if (templateType === "html") {
-        tableHeader += `<th>${getCatalogComponentLabel(component.name)}</th>`;
-      } else {
-        tableHeader += ` | ${getCatalogComponentLabel(component.name)}`;
-        tableHeaderMarkdownUnderline += " | ---";
-      }
-      tableCounts[component.name] = [];
-    }
+    let supportCount = 0;
+    let partiallySupportCount = 0;
+    let doesNotSupportCount = 0;
+    let notApplicableCount = 0;
     for (const criteria of criterias) {
       if (criteria.components) {
         for (const component of criteria.components) {
-          if (component.adherence) {
-            if (tableCounts[component.name] === undefined) {
-              if (templateType === "html") {
-                tableHeader += `<th>${getCatalogComponentLabel(
-                  component.name
-                )}</th>`;
-              } else {
-                tableHeader += ` | ${getCatalogComponentLabel(component.name)}`;
-                tableHeaderMarkdownUnderline += " | ---";
-              }
-              tableCounts[component.name] = [];
-            }
-
-            if (tableCounts[component.name][component.adherence.level]) {
-              tableCounts[component.name][component.adherence.level] += 1;
-            } else {
-              tableCounts[component.name][component.adherence.level] = 1;
-            }
+          if (component.adherence && component.adherence.level === "supports") {
+            supportCount = supportCount + 1;
+          } else if (
+            component.adherence &&
+            component.adherence.level === "partially-supports"
+          ) {
+            partiallySupportCount = partiallySupportCount + 1;
+          } else if (
+            component.adherence &&
+            component.adherence.level === "does-not-support"
+          ) {
+            doesNotSupportCount = doesNotSupportCount + 1;
+          } else if (
+            component.adherence &&
+            component.adherence.level === "not-applicable"
+          ) {
+            notApplicableCount = notApplicableCount + 1;
           }
         }
       }
     }
-    let tableBody = "";
-    if (catalogData.terms) {
-      for (const term of catalogData.terms) {
-        if (term.label != "" && term.id != "not-evaluated") {
-          if (templateType === "html") {
-            tableBody += `<tr><td>${getLevelLabel(term.id)}</td>`;
-          } else {
-            tableBody += `| ${getLevelLabel(term.id)}`;
-          }
-          for (const component in tableCounts) {
-            if (templateType === "html") {
-              if (tableCounts[component] && tableCounts[component][term.id]) {
-                tableBody += `<td>${tableCounts[component][term.id]}</td>`;
-              } else {
-                tableBody += "<td>0</td>";
-              }
-            } else {
-              if (tableCounts[component] && tableCounts[component][term.id]) {
-                tableBody += ` | ${tableCounts[component][term.id]}`;
-              } else {
-                tableBody += " | 0";
-              }
-            }
-          }
 
-          if (templateType === "html") {
-            tableBody += "</tr>";
-          } else {
-            tableBody += ` |
-`;
-          }
-        }
-      }
-    }
     if (templateType === "html") {
       return new Handlebars.SafeString(
-        `<thead><tr><th>Conformance Level</th>${tableHeader}</tr></thead>${tableBody}`
+        `<li>${supportCount} supported</li>
+        <li>${partiallySupportCount} partially supported</li>
+        <li>${doesNotSupportCount} not supported</li>
+        <li>${notApplicableCount} not applicable</li>`
       );
     } else {
-      return `| Conformance Level${tableHeader} |
-| ---${tableHeaderMarkdownUnderline} |
-${tableBody}`;
+      return `- ${supportCount} supported
+- ${partiallySupportCount} partially supported
+- ${doesNotSupportCount} not supported
+- ${notApplicableCount} not applicable`;
     }
   });
 

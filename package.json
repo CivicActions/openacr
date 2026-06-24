@@ -20,7 +20,7 @@
     "eslint": "^7.30.0",
     "license-checker-rseidelsohn": "^2.1.1",
     "mocha": "^11.0.1",
-    "nyc": "^15.1.0",
+    "nyc": "^18.0.0",
     "pa11y-ci": "^4.1.1",
     "prettier": "2.3.2",
     "ts-mockito": "^2.6.1",
